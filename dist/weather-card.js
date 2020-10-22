@@ -6,18 +6,18 @@ const weatherIconsDay = {
   clear: "day",
   "clear-night": "night",
   cloudy: "cloudy",
-  fog: "cloudy",
-  hail: "rainy-7",
+  fog: "fog",
+  hail: "hail",
   lightning: "thunder",
   "lightning-rainy": "thunder",
-  partlycloudy: "cloudy-day-3",
-  pouring: "rainy-6",
-  rainy: "rainy-5",
-  snowy: "snowy-6",
+  partlycloudy: "cloudy-day",
+  pouring: "rainy-1",
+  rainy: "rainy-2",
+  snowy: "snowy-1",
   "snowy-rainy": "rainy-7",
   sunny: "day",
-  windy: "cloudy",
-  "windy-variant": "cloudy-day-3",
+  windy: "windy",
+  "windy-variant": "windy",
   exceptional: "!!",
 };
 
@@ -25,8 +25,8 @@ const weatherIconsNight = {
   ...weatherIconsDay,
   clear: "night",
   sunny: "night",
-  partlycloudy: "cloudy-night-3",
-  "windy-variant": "cloudy-night-3",
+  partlycloudy: "cloudy-night",
+  "windy-variant": "cloudy-night",
 };
 
 const windDirections = [
@@ -493,15 +493,12 @@ class WeatherCard extends LitElement {
         padding-right: 1em;
         position: relative;
       }
-
       .spacer {
         padding-top: 1em;
       }
-
       .clear {
         clear: both;
       }
-
       .title {
         position: absolute;
         left: 3em;
@@ -509,7 +506,6 @@ class WeatherCard extends LitElement {
         font-size: 3em;
         color: var(--primary-text-color);
       }
-
       .temp {
         font-weight: 300;
         font-size: 4em;
@@ -517,7 +513,6 @@ class WeatherCard extends LitElement {
         position: absolute;
         right: 1em;
       }
-
       .tempc {
         font-weight: 300;
         font-size: 1.5em;
@@ -528,7 +523,6 @@ class WeatherCard extends LitElement {
         margin-top: -14px;
         margin-right: 7px;
       }
-
       @media (max-width: 460px) {
         .title {
           font-size: 2.2em;
@@ -541,12 +535,10 @@ class WeatherCard extends LitElement {
           font-size: 1em;
         }
       }
-
       .current {
         padding: 1.2em 0;
         margin-bottom: 3.5em;
       }
-
       .variations {
         display: flex;
         flex-flow: row wrap;
@@ -557,38 +549,31 @@ class WeatherCard extends LitElement {
         padding: 0 1em;
         margin: 0;
       }
-
       .variations ha-icon {
         height: 22px;
         margin-right: 5px;
         color: var(--paper-item-icon-color);
       }
-
       .variations li {
         flex-basis: auto;
         width: 50%;
       }
-
       .variations li:nth-child(2n) {
         text-align: right;
       }
-
       .variations li:nth-child(2n) ha-icon {
         margin-right: 0;
         margin-left: 8px;
         float: right;
       }
-
       .unit {
         font-size: 0.8em;
       }
-
       .forecast {
         width: 100%;
         margin: 0 auto;
         display: flex;
       }
-
       .day {
         flex: 1;
         display: block;
@@ -598,41 +583,33 @@ class WeatherCard extends LitElement {
         line-height: 2;
         box-sizing: border-box;
       }
-
       .dayname {
         text-transform: uppercase;
       }
-
       .forecast .day:first-child {
         margin-left: 0;
       }
-
       .forecast .day:nth-last-child(1) {
         border-right: none;
         margin-right: 0;
       }
-
       .highTemp {
         font-weight: bold;
       }
-
       .lowTemp {
         color: var(--secondary-text-color);
       }
-
       .precipitation {
         color: var(--primary-text-color);
         font-weight: 300;
       }
-
       .icon.bigger {
-        width: 10em;
-        height: 10em;
-        margin-top: -4em;
+        width: 90px;
+        height: 90px;
+        margin-top: -2em;
         position: absolute;
-        left: 0em;
+        left: 1em;
       }
-
       .icon {
         width: 50px;
         height: 50px;
@@ -644,7 +621,6 @@ class WeatherCard extends LitElement {
         background-repeat: no-repeat;
         text-indent: -9999px;
       }
-
       .weather {
         font-weight: 300;
         font-size: 1.5em;
@@ -656,7 +632,6 @@ class WeatherCard extends LitElement {
         word-wrap: break-word;
         width: 30%;
       }
-
       .hourly {
         display: flex;
         flex-direction: row;
@@ -668,23 +643,54 @@ class WeatherCard extends LitElement {
         overflow: hidden;
         list-style: none;
       }
-
       .hourly li {
         width: 100%;
         background-color: var(--paper-item-icon-color);
         border-right: 1px solid var(--lovelace-background, var(--primary-background-color));
       }
-
       .hourly li:first-child {
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
       }
-
       .hourly li:last-child {
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
         border: 0;
       }
+        
+        .vigilance {
+          display: block;
+          border-radius: 5px;
+          padding: 5px 10px;
+          font-weight: 600;
+          color: var(--primary-text-color);
+          margin: 2px;
+        }
+        
+        .vigilance ha-icon {
+          margin: 0px 10px 0px 0px;
+        }
+        
+        .vigilance-list ha-icon {
+          margin: 0px;
+        }
+        
+        .vigilance-list {
+          float: right;
+        }
+        
+        .vigilance.jaune {
+          background-color: rgba(255,235,0,0.5);
+        }
+        
+        .vigilance.orange {
+          background-color: rgba(255,152,0,0.5);
+        }
+        
+        .vigilance.rouge {
+          background-color: rgba(244,67,54,0.5);
+        }
+
     `;
   }
 }
