@@ -8,4 +8,4 @@ Les icones viennent de https://icon-icons.com/fr/pack/The-Weather-is-Nice-Today/
 
 Exemple de réglages:
 
-[Weather Card](http://axellum.free.fr/regmeteofrance.png)
+![reglage](http://axellum.free.fr/regmeteofrance.png)
