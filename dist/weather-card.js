@@ -207,8 +207,6 @@ class WeatherCard extends LitElement {
       this.getUnit("speed"))}
         <!-- Pressure -->
         ${this.renderDetail(stateObj.attributes.pressure, "mdi:gauge", this.getUnit("air_pressure"))}
-        <!-- Fog -->
-        ${this.renderDetail(stateObj.attributes.visibility, "mdi:weather-fog", this.getUnit("length"))}
         <!-- Meteo France sensors -->
         <!-- Cloudy -->
         ${this.renderMeteoFranceDetail(this.hass.states[this._config.cloudCoverEntity])}
