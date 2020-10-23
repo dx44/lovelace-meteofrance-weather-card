@@ -6,18 +6,18 @@ const weatherIconsDay = {
   clear: "day",
   "clear-night": "night",
   cloudy: "cloudy",
-  fog: "cloudy",
-  hail: "rainy-7",
+  fog: "fog",
+  hail: "hail",
   lightning: "thunder",
   "lightning-rainy": "thunder",
-  partlycloudy: "cloudy-day-3",
-  pouring: "rainy-6",
-  rainy: "rainy-5",
-  snowy: "snowy-6",
+  partlycloudy: "cloudy-day",
+  pouring: "rainy-1",
+  rainy: "rainy-2",
+  snowy: "snowy-1",
   "snowy-rainy": "rainy-7",
   sunny: "day",
-  windy: "cloudy",
-  "windy-variant": "cloudy-day-3",
+  windy: "windy",
+  "windy-variant": "windy",
   exceptional: "!!",
 };
 
@@ -25,8 +25,8 @@ const weatherIconsNight = {
   ...weatherIconsDay,
   clear: "night",
   sunny: "night",
-  partlycloudy: "cloudy-night-3",
-  "windy-variant": "cloudy-night-3",
+  partlycloudy: "cloudy-night",
+  "windy-variant": "cloudy-night",
 };
 
 const windDirections = [
@@ -590,11 +590,11 @@ class WeatherCard extends LitElement {
         font-weight: 300;
       }
       .icon.bigger {
-        width: 10em;
-        height: 10em;
-        margin-top: -4em;
+        width: 90px;
+        height: 90px;
+        margin-top: -2em;
         position: absolute;
-        left: 0em;
+        left: 1em;
       }
       .icon {
         width: 50px;
