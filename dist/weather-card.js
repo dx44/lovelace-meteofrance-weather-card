@@ -8,11 +8,11 @@ const weatherIconsDay = {
   cloudy: "cloudy",
   fog: "fog",
   hail: "hail",
-  lightning: "thunder",
-  "lightning-rainy": "thunder",
+  lightning: "thunder-1",
+  "lightning-rainy": "thunder-2",
   partlycloudy: "cloudy-day",
-  pouring: "rainy-1",
-  rainy: "rainy-2",
+  pouring: "rainy-2",
+  rainy: "rainy-5",
   snowy: "snowy-1",
   "snowy-rainy": "rainy-7",
   sunny: "day",
@@ -26,7 +26,7 @@ const weatherIconsNight = {
   clear: "night",
   sunny: "night",
   partlycloudy: "cloudy-night",
-  "windy-variant": "cloudy-night",
+  "windy-variant": "windy-night",
 };
 
 const windDirections = [
@@ -200,22 +200,21 @@ class WeatherCard extends LitElement {
 
     return html`
       <ul class="variations ${this.numberElements > 1 ? " spacer" : ""}">
-        <!-- Humidity -->
-        ${this.renderDetail(stateObj.attributes.humidity, "mdi:water-percent", "%")}
+        <!-- Cloudy -->
+        ${this.renderMeteoFranceDetail(this.hass.states[this._config.cloudCoverEntity])}
         <!-- Wind -->
         ${this.renderDetail(windDirections[parseInt((stateObj.attributes.wind_bearing + 11.25) / 22.5)] + " " + stateObj.attributes.wind_speed, "mdi:weather-windy",
       this.getUnit("speed"))}
-        <!-- Pressure -->
-        ${this.renderDetail(stateObj.attributes.pressure, "mdi:gauge", this.getUnit("air_pressure"))}
-        <!-- Meteo France sensors -->
-        <!-- Cloudy -->
-        ${this.renderMeteoFranceDetail(this.hass.states[this._config.cloudCoverEntity])}
         <!-- Rain -->
         ${this.renderMeteoFranceDetail(this.hass.states[this._config.rainChanceEntity])}
-        <!-- Snow -->
-        ${this.renderMeteoFranceDetail(this.hass.states[this._config.snowChanceEntity])}
+        <!-- Humidity -->
+        ${this.renderDetail(stateObj.attributes.humidity, "mdi:water-percent", "%")}
         <!-- Freeze -->
         ${this.renderMeteoFranceDetail(this.hass.states[this._config.freezeChanceEntity])}
+        <!-- Pressure -->
+        ${this.renderDetail(stateObj.attributes.pressure, "mdi:gauge", this.getUnit("air_pressure"))}
+        <!-- Snow -->
+        ${this.renderMeteoFranceDetail(this.hass.states[this._config.snowChanceEntity])}
         <!-- UV -->
         ${this.renderMeteoFranceDetail(this.hass.states[this._config.uvEntity])}
         <!-- Sunset up -->
@@ -485,21 +484,21 @@ class WeatherCard extends LitElement {
       }
       .title {
         position: absolute;
-        left: 3em;
+        left: 3.5em;
         font-weight: 300;
-        font-size: 3em;
+        font-size: 2.5em;
         color: var(--primary-text-color);
       }
       .temp {
         font-weight: 300;
-        font-size: 4em;
+        font-size: 3em;
         color: var(--primary-text-color);
         position: absolute;
         right: 1em;
       }
       .tempc {
         font-weight: 300;
-        font-size: 1.5em;
+        font-size: 1em;
         vertical-align: super;
         color: var(--primary-text-color);
         position: absolute;
@@ -523,6 +522,7 @@ class WeatherCard extends LitElement {
         padding: 1.2em 0;
         margin-bottom: 3.5em;
       }
+      
       .variations {
         display: flex;
         flex-flow: row wrap;
@@ -550,6 +550,9 @@ class WeatherCard extends LitElement {
         margin-left: 8px;
         float: right;
       }
+
+
+
       .unit {
         font-size: 0.8em;
       }
