@@ -1,6 +1,8 @@
 # Lovelace meteo France weather card
 
-Originally created for the [old UI](https://community.home-assistant.io/t/custom-ui-weather-state-card-with-a-question/23008) converted by @arsaboo and @ciotlosm to [Lovelace](https://community.home-assistant.io/t/custom-ui-weather-state-card-with-a-question/23008/291) and now converted to Lit to make it even better.
+Adaptation avec remplacement des iconnes de la carte https://github.com/dx44/weather-card
+
+Les icones viennent de https://icon-icons.com/fr/pack/The-Weather-is-Nice-Today/1370 avec parfois de petites adaptations.
 
 This card uses the awesome [animated SVG weather icons by amCharts](https://www.amcharts.com/free-animated-svg-weather-icons/).
 
