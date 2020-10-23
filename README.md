@@ -9,3 +9,5 @@ Les icones viennent de https://icon-icons.com/fr/pack/The-Weather-is-Nice-Today/
 Exemple de réglages:
 
 ![reglage](http://axellum.free.fr/regmeteofrance.png)
+
+Icons location: /local/community/weather-card/icons/
