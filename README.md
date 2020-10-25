@@ -22,7 +22,7 @@ Ajouter dans "Configuration" / "Tableaux de bord Lovelace" / "Ressources" l'adre
 ```yaml
 current: true
 entity: weather.VotreVille
-type: 'custom:weather-card'
+type: 'custom:meteofrance-weather-card'
 number_of_forecasts: '5'
 name: VotreVille
 hourly_forecast: false
