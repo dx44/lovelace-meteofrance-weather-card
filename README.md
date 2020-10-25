@@ -59,4 +59,5 @@ alertEntity: sensor.VotreRegion_weather_alert
 rainForecastEntity: sensor.VotreVille_next_rain
 one_hour_forecast: true
 alert_forecast: true
+icons: /local/community/weather-card/icons/
 ```
