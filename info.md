@@ -11,11 +11,11 @@ Les icônes viennent de https://icon-icons.com/fr/pack/The-Weather-is-Nice-Today
 
 Projet reprit de https://github.com/Imbuzi/meteo-france-weather-card, pour une adaptation de la carte https://github.com/bramkragten/weather-card dédié à Météo France.
 
-![Weather Card](https://github.com/Axellum/weather-card/blob/Meteo-France/weather-card.gif.png?raw=true)
+![Weather Card](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/carte-IconesFixe.png?raw=true)
 
 ## Installation:
 
-Ajoutez l'adresse https://github.com/hacf-fr/lovelace-meteofrance-weather-card dans "Custom repositories" sur HACS, "Category": "Lovelace".
+Ajoutez l'adresse https://github.com/Axellum/lovelace-meteofrance-weather-card dans "Custom repositories" sur HACS, "Category": "Lovelace".
 
 Ajouter dans "Configuration" / "Tableaux de bord Lovelace" / "Ressources" l'adresse de la carte:
 
@@ -33,10 +33,12 @@ type: 'custom:meteofrance-weather-card'
 ```
 3/ "Afficher l'éditeur de code" (cela affichera l'éditeur visuel)
 
-4/ Choisir votre weather Météo France en Entity.
+4/ Renseigner "Icones location" avec l'adresse /local/community/weather-card/icons/
+
+5/ Choisir votre weather Météo France en Entity.
 Cela renseignera automatique les différents sensor, il vous faudra renseigner Vigilance Météo par le sensor vigilance de votre région.
 
-![reglages_graph](https://github.com/Axellum/weather-card/blob/Meteo-France/reglages_graph.png?raw=true)
+![reglages_graph](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/regl-carte-icone.png?raw=true)
 
   -Manuel:
 ```yaml
@@ -44,35 +46,19 @@ current: true
 entity: weather.VotreVille
 type: 'custom:meteofrance-weather-card'
 number_of_forecasts: '5'
-The 3 different rows, being:
-
-- The current weather icon, the current temperature and title
-- The details about the current weather
-- The 5 day forecast
-
-```yaml
-type: custom:weather-card
-entity: weather.yourweatherentity
-current: true
-details: false
+name: VotreVille
+hourly_forecast: false
 forecast: true
+details: true
+rainChanceEntity: sensor.VotreVille_rain_chance
+uvEntity: sensor.VotreVille_uv
+cloudCoverEntity: sensor.VotreVille_cloud_cover
+freezeChanceEntity: sensor.VotreVille_freeze_chance
+snowChanceEntity: sensor.VotreVille_snow_chance
+alertEntity: sensor.VotreRegion_weather_alert
+rainForecastEntity: sensor.VotreVille_next_rain
+one_hour_forecast: true
+alert_forecast: true
+icons: /local/community/weather-card/icons/
 ```
 
-If you want to show the sunrise and sunset times, make sure the `sun` component is enabled:
-
-```yaml
-# Example configuration.yaml entry
-sun:
-```
-
-### Dark Sky:
-
-When using Dark Sky you should put the mode to `daily` if you want a daily forecast with highs and lows.
-
-```yaml
-# Example configuration.yaml entry
-weather:
-  - platform: darksky
-    api_key: YOUR_API_KEY
-    mode: daily
-```
