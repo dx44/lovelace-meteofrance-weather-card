@@ -15,7 +15,18 @@ Ajouter dans "Configuration" / "Tableaux de bord Lovelace" / "Ressources" l'adre
 ```
 
 ## Configuration:
-  -Graphique:
+
+1/ Ajouté une carte manuel.
+
+2/ Mettre:
+```yaml
+type: 'custom:meteofrance-weather-card'
+```
+3/ "Afficher l'éditeur de code" (cela affichera l'éditeur visuel)
+
+4/ Choissisez votre weather Météo France en Entity.
+Cela renseignera automatique les différents sensor, il vous faudra renseigner Vigilance Météo par le sensor vigilance de votre région.
+
 ![reglages_graph](https://github.com/Axellum/weather-card/blob/Meteo-France/reglages_graph.png?raw=true)
 
   -Manuel:
