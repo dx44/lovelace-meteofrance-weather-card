@@ -1,4 +1,4 @@
-# Lovelace météo France weather-card
+# Lovelace Météo France weather-card
 
 Projet reprit de https://github.com/Imbuzi/meteo-france-weather-card, pour une adaptation de la carte https://github.com/bramkragten/weather-card dédier à Météo France.
 
