@@ -1,77 +1,51 @@
-# Lovelace animated weather card
+# Lovelace Météo France weather-card
 
-Originally created for the [old UI](https://community.home-assistant.io/t/custom-ui-weather-state-card-with-a-question/23008) converted by @arsaboo and @ciotlosm to [Lovelace](https://community.home-assistant.io/t/custom-ui-weather-state-card-with-a-question/23008/291) and now converted to Lit to make it even better.
+Projet reprit de https://github.com/Imbuzi/meteo-france-weather-card, pour une adaptation de la carte https://github.com/bramkragten/weather-card dédier à Météo France.
 
-This card uses the awesome [animated SVG weather icons by amCharts](https://www.amcharts.com/free-animated-svg-weather-icons/).
-
-![Weather Card](https://github.com/bramkragten/custom-ui/blob/master/weather-card/weather-card.gif?raw=true)
-
-Thanks for all picking this card up.
+![Weather Card](https://github.com/Axellum/weather-card/blob/Meteo-France/weather-card.gif.png?raw=true)
 
 ## Installation:
 
-### If you are using Firefox:
+Ajoutez l'adresse https://github.com/hacf-fr/lovelace-meteofrance-weather-card dans "Custom repositories" sur HACS, "Category": "Lovelace".
 
-Firefox < 66 does not support all the needed functions yet for the editor.
-You change this by enabling `javascript.options.dynamicImport` in `about:config`.
-
-Add the following to resources in your lovelace config:
+Ajouter dans "Configuration" / "Tableaux de bord Lovelace" / "Ressources" l'adresse de la carte:
 
 ```yaml
-resources:
-  - url: /hacsfiles/weather-card/weather-card.js
-    type: module
+/hacsfiles/lovelace-meteofrance-weather-card/meteofrance-weather-card.js
 ```
 
 ## Configuration:
 
-And add a card with type `custom:weather-card`:
+1/ Ajouté une carte manuel.
 
+2/ Mettre:
 ```yaml
-- type: custom:weather-card
-  entity: weather.yourweatherentity
-  name: Optional name
+type: 'custom:meteofrance-weather-card'
 ```
+3/ "Afficher l'éditeur de code" (cela affichera l'éditeur visuel)
 
-If you want to use your local icons add the location to the icons:
+4/ Choisissez votre weather Météo France en Entity.
+Cela renseignera automatique les différents sensor, il vous faudra renseigner Vigilance Météo par le sensor vigilance de votre région.
 
+![reglages_graph](https://github.com/Axellum/weather-card/blob/Meteo-France/reglages_graph.png?raw=true)
+
+  -Manuel:
 ```yaml
-- type: custom:weather-card
-  entity: weather.yourweatherentity
-  icons: "/community_plugin/weather-card/icons/"
-```
-
-You can choose wich elements of the weather card you want to show:
-
-The 3 different rows, being:
-
-- The current weather icon, the current temperature and title
-- The details about the current weather
-- The 5 day forecast
-
-```yaml
-type: custom:weather-card
-entity: weather.yourweatherentity
 current: true
-details: false
+entity: weather.VotreVille
+type: 'custom:meteofrance-weather-card'
+number_of_forecasts: '5'
+name: VotreVille
+hourly_forecast: false
 forecast: true
-```
-
-If you want to show the sunrise and sunset times, make sure the `sun` component is enabled:
-
-```yaml
-# Example configuration.yaml entry
-sun:
-```
-
-### Dark Sky:
-
-When using Dark Sky you should put the mode to `daily` if you want a daily forecast with highs and lows.
-
-```yaml
-# Example configuration.yaml entry
-weather:
-  - platform: darksky
-    api_key: YOUR_API_KEY
-    mode: daily
+details: true
+rainChanceEntity: sensor.VotreVille_rain_chance
+uvEntity: sensor.VotreVille_uv
+cloudCoverEntity: sensor.VotreVille_cloud_cover
+freezeChanceEntity: sensor.VotreVille_freeze_chance
+snowChanceEntity: sensor.VotreVille_snow_chance
+alertEntity: sensor.VotreRegion_weather_alert
+rainForecastEntity: sensor.VotreVille_next_rain
+one_hour_forecast: true
+alert_forecast: true
 ```
