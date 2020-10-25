@@ -17,11 +17,21 @@ Ajouter dans "Configuration" / "Tableaux de bord Lovelace" / "Ressources" l'adre
 ## Configuration:
 
 ```yaml
-type: custom:weather-card
-entity: weather.yourweatherentity
 current: true
-details: false
-forecast: true
+entity: weather.VotreVille
+type: 'custom:weather-card'
+number_of_forecasts: '5'
+name: VotreVille
 hourly_forecast: false
-number_of_forecasts: 5
+forecast: true
+details: true
+rainChanceEntity: sensor.VotreVille_rain_chance
+uvEntity: sensor.VotreVille_uv
+cloudCoverEntity: sensor.VotreVille_cloud_cover
+freezeChanceEntity: sensor.VotreVille_freeze_chance
+snowChanceEntity: sensor.VotreVille_snow_chance
+alertEntity: sensor.VotreRegion_weather_alert
+rainForecastEntity: sensor.VotreVille_next_rain
+one_hour_forecast: true
+alert_forecast: true
 ```
