@@ -1,13 +1,6 @@
 # Lovelace meteo France weather card
 
-Adaptation avec remplacement des iconnes de la carte https://github.com/dx44/weather-card
-
-Les icones viennent de https://icon-icons.com/fr/pack/The-Weather-is-Nice-Today/1370 avec parfois de petites adaptations.
+Projet reprit de https://github.com/Imbuzi/meteo-france-weather-card, pour une adaptation de la carte https://github.com/bramkragten/weather-card dédier à Météo France.
 
 ![Weather Card](https://github.com/Axellum/weather-card/blob/Meteo-France/weather-card.gif.png?raw=true)
 
-Exemple de réglages:
-
-![reglage](http://axellum.free.fr/regmeteofrance.png)
-
-Icons location: /local/community/weather-card/icons/
