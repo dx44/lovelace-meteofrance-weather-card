@@ -15,7 +15,10 @@ Ajouter dans "Configuration" / "Tableaux de bord Lovelace" / "Ressources" l'adre
 ```
 
 ## Configuration:
+  -Graphique:
+![reglages_graph](https://github.com/Axellum/weather-card/blob/Meteo-France/reglages_graph.png?raw=true)
 
+  -Manuel:
 ```yaml
 current: true
 entity: weather.VotreVille
