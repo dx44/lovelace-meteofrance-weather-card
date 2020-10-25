@@ -2,50 +2,33 @@
 
 Projet reprit de https://github.com/Imbuzi/meteo-france-weather-card, pour une adaptation de la carte https://github.com/bramkragten/weather-card dédié à Météo France.
 
-![Weather Card](https://github.com/Axellum/weather-card/blob/Meteo-France/weather-card.gif.png?raw=true)
+![Weather Card](https://github.com/hacf-fr/lovelace-meteofrance-weather-card/blob/Meteo-France/meteofrance-weather-card.png?raw=true)
+
+## Prérequis
+
+L'intégration ["Méteo France"](https://www.home-assistant.io/integrations/meteo_france) doit être installée et configurée.
+
+Cette carte esy prévue pour s'installer depuis [HACS](https://hacs.xyz/) (Home Assistant Community Store). L'installation de ce composant est décrit sur son site.
 
 ## Installation:
 
-Ajoutez l'adresse https://github.com/hacf-fr/lovelace-meteofrance-weather-card dans "Custom repositories" sur HACS, "Category": "Lovelace".
+Ajoutez l'adresse https://github.com/hacf-fr/lovelace-meteofrance-weather-card dans "Custom repositories" sur HACS, dans la catégorie "Lovelace".
 
-Ajouter dans "Configuration" / "Tableaux de bord Lovelace" / "Ressources" l'adresse de la carte:
+Une fois le dépôt ajouté, il apparait dans la liste des dépôts additionnels avec pour titre "Lovelace Meteofrance Weather Card". Cliquez dessus et utiliser l'option "Install this repository in HACS". 
+Laisser le choix de la version dans la dernière en date et utiliser l'option "Install".
+Il vous est demandé de recharger l'interface, accepter avec l'option "Reload".
 
-```yaml
-/hacsfiles/lovelace-meteofrance-weather-card/meteofrance-weather-card.js
-```
+
+A ce stade, la carte est disponible dans la liste des cartes à ajouter dans votre "Tableau de bord".
 
 ## Configuration:
 
-1/ Ajouter une carte manuel.
+La carte est a ajouter depuis votre tableau de bord en mode édition.
 
-2/ Mettre:
-```yaml
-type: 'custom:meteofrance-weather-card'
-```
-3/ "Afficher l'éditeur de code" (cela affichera l'éditeur visuel)
+Utiliser le + en bas à droite pour afficher la liste des cartes.
 
-4/ Choisir votre weather Météo France en Entity.
-Cela renseignera automatique les différents sensor, il vous faudra renseigner Vigilance Météo par le sensor vigilance de votre région.
+Sélectionner la carte personnalisée "Carte Météo France" et la configurer.
 
-![reglages_graph](https://github.com/Axellum/weather-card/blob/Meteo-France/reglages_graph.png?raw=true)
+Définir un nom de carte et sélectionner l'Entity weather correspondant à celle de l'intégration Météo France.
 
-  -Manuel:
-```yaml
-current: true
-entity: weather.VotreVille
-type: 'custom:meteofrance-weather-card'
-number_of_forecasts: '5'
-name: VotreVille
-hourly_forecast: false
-forecast: true
-details: true
-rainChanceEntity: sensor.VotreVille_rain_chance
-uvEntity: sensor.VotreVille_uv
-cloudCoverEntity: sensor.VotreVille_cloud_cover
-freezeChanceEntity: sensor.VotreVille_freeze_chance
-snowChanceEntity: sensor.VotreVille_snow_chance
-alertEntity: sensor.VotreRegion_weather_alert
-rainForecastEntity: sensor.VotreVille_next_rain
-one_hour_forecast: true
-alert_forecast: true
-```
+Les autres entités (Risque de pluie, UV, etc) sont automatiquement calculées sauf "Vigilance Météo" que vous devez sélectionner.
