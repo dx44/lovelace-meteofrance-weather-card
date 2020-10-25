@@ -6,18 +6,18 @@ const weatherIconsDay = {
   clear: "day",
   "clear-night": "night",
   cloudy: "cloudy",
-  fog: "fog",
-  hail: "hail",
-  lightning: "thunder-1",
-  "lightning-rainy": "thunder-2",
-  partlycloudy: "cloudy-day",
-  pouring: "rainy-2",
+  fog: "cloudy",
+  hail: "rainy-7",
+  lightning: "thunder",
+  "lightning-rainy": "thunder",
+  partlycloudy: "cloudy-day-3",
+  pouring: "rainy-6",
   rainy: "rainy-5",
-  snowy: "snowy-1",
+  snowy: "snowy-6",
   "snowy-rainy": "rainy-7",
   sunny: "day",
-  windy: "windy",
-  "windy-variant": "windy",
+  windy: "cloudy",
+  "windy-variant": "cloudy-day-3",
   exceptional: "!!",
 };
 
@@ -25,8 +25,8 @@ const weatherIconsNight = {
   ...weatherIconsDay,
   clear: "night",
   sunny: "night",
-  partlycloudy: "cloudy-night",
-  "windy-variant": "windy-night",
+  partlycloudy: "cloudy-night-3",
+  "windy-variant": "cloudy-night-3",
 };
 
 const windDirections = [
@@ -52,10 +52,10 @@ const windDirections = [
 window.customCards = window.customCards || [];
 window.customCards.push({
   type: "weather-card",
-  name: "Weather Card",
-  description: "A custom weather card with animated icons.",
+  name: "Carte Météo France",
+  description: "Carte pour l'intégration Météo France.",
   preview: true,
-  documentationURL: "https://github.com/bramkragten/weather-card",
+  documentationURL: "https://github.com/dx44/meteofrance-weather-card",
 });
 
 const fireEvent = (node, type, detail, options) => {
@@ -88,7 +88,7 @@ function hasConfigOrEntityChanged(element, changedProps) {
   return true;
 }
 
-class WeatherCard extends LitElement {
+class MeteofranceWeatherCard extends LitElement {
   static get properties() {
     return {
       _config: {},
@@ -97,8 +97,8 @@ class WeatherCard extends LitElement {
   }
 
   static async getConfigElement() {
-    await import("./weather-card-editor.js");
-    return document.createElement("weather-card-editor");
+    await import("./meteofrance-weather-card-editor.js");
+    return document.createElement("meteofrance-weather-card-editor");
   }
 
   static getStubConfig(hass, unusedEntities, allEntities) {
@@ -118,6 +118,10 @@ class WeatherCard extends LitElement {
 
   shouldUpdate(changedProps) {
     return hasConfigOrEntityChanged(this, changedProps);
+  }
+
+  isSelected(option) {
+    return option === undefined || option === true;
   }
 
   render() {
@@ -148,18 +152,16 @@ class WeatherCard extends LitElement {
 
     return html`
       <ha-card @click="${this._handleClick}">
-        ${this._config.current ? this.renderCurrent(stateObj) : ""}
-        ${this._config.details ? this.renderDetails(stateObj) : ""}
-        ${this._config.one_hour_forecast
-        ? this.renderOneHourForecast()
-        : ""}
-        ${this._config.alertEntity
-        && this._config.alert_forecast
-        ? this.renderAlertForecast()
-        : ""}
-        ${this._config.forecast
-        ? this.renderForecast(stateObj.attributes.forecast)
-        : ""}
+        ${this.isSelected(this._config.current)
+        ? this.renderCurrent(stateObj) : ""}
+        ${this.isSelected(this._config.details)
+        ? this.renderDetails(stateObj) : ""}
+        ${this.isSelected(this._config.one_hour_forecast)
+        ? this.renderOneHourForecast() : ""}
+        ${this.isSelected(this._config.alert_forecast)
+        ? this.renderAlertForecast() : ""}
+        ${this.isSelected(this._config.forecast)
+        ? this.renderForecast(stateObj.attributes.forecast) : ""}
       </ha-card>
     `;
   }
@@ -203,40 +205,44 @@ class WeatherCard extends LitElement {
         <!-- Cloudy -->
         ${this.renderMeteoFranceDetail(this.hass.states[this._config.cloudCoverEntity])}
         <!-- Wind -->
-        ${this.renderDetail(windDirections[parseInt((stateObj.attributes.wind_bearing + 11.25) / 22.5)] + " " + stateObj.attributes.wind_speed, "mdi:weather-windy",
+        ${this.renderDetail(windDirections[parseInt((stateObj.attributes.wind_bearing + 11.25) / 22.5)] + " " + stateObj.attributes.wind_speed, "Vent", "mdi:weather-windy",
       this.getUnit("speed"))}
         <!-- Rain -->
         ${this.renderMeteoFranceDetail(this.hass.states[this._config.rainChanceEntity])}
         <!-- Humidity -->
-        ${this.renderDetail(stateObj.attributes.humidity, "mdi:water-percent", "%")}
+        ${this.renderDetail(stateObj.attributes.humidity, "Humidité", "mdi:water-percent", "%")}
         <!-- Freeze -->
         ${this.renderMeteoFranceDetail(this.hass.states[this._config.freezeChanceEntity])}
         <!-- Pressure -->
-        ${this.renderDetail(stateObj.attributes.pressure, "mdi:gauge", this.getUnit("air_pressure"))}
+        ${this.renderDetail(stateObj.attributes.pressure, "Pression atmosphérique", "mdi:gauge", this.getUnit("air_pressure"))}
         <!-- Snow -->
         ${this.renderMeteoFranceDetail(this.hass.states[this._config.snowChanceEntity])}
         <!-- UV -->
         ${this.renderMeteoFranceDetail(this.hass.states[this._config.uvEntity])}
+      </ul>
+      <ul class="variations spacer">
         <!-- Sunset up -->
         ${next_rising
-        ? this.renderDetail(next_rising.toLocaleTimeString(), "mdi:weather-sunset-up")
+        ? this.renderDetail(next_rising.toLocaleTimeString(), "Heure de lever", "mdi:weather-sunset-up")
         : ""}
         <!-- Sunset down -->
         ${next_setting
-        ? this.renderDetail(next_setting.toLocaleTimeString(), "mdi:weather-sunset-down")
+        ? this.renderDetail(next_setting.toLocaleTimeString(), "Heure de coucher", "mdi:weather-sunset-down")
         : ""}
       </ul>
     `;
   }
 
   renderMeteoFranceDetail(entity) {
-    return this.renderDetail(entity.state, entity.attributes.icon, entity.attributes.unit_of_measurement)
+    return entity !== undefined
+      ? this.renderDetail(entity.state, entity.attributes.friendly_name, entity.attributes.icon, entity.attributes.unit_of_measurement)
+      : ""
   }
 
-  renderDetail(state, icon, unit) {
+  renderDetail(state, label, icon, unit) {
     return html`
       <li>
-        <ha-icon icon="${icon}"></ha-icon>
+        <ha-icon icon="${icon}" title="${label}"></ha-icon>
         ${state}
         ${unit ? html`
         <span class="unit">${unit}</span>
@@ -255,18 +261,34 @@ class WeatherCard extends LitElement {
 
     this.numberElements++;
 
+    let [startTime, endTime] = this.getOneHourForecastTime(rainForecast);
+
     return html`
+      <div>
+      <ul class="oneHourHeader">
+      <li> ${startTime} </li>
+      <li> ${endTime} </li>
+      </ul>
       <ul class="oneHour">
         ${html`
         ${this.getOneHourForecast(rainForecast).map(
       (forecast) => html`
-      <li style="opacity: ${forecast[1]}" title="${forecast[2] + " " + (forecast[0] == 0
+      <li class="rain-${forecast[0]}min" style="opacity: ${forecast[1]}" title="${forecast[2] + " " + (forecast[0] == 0
           ? " actuellement"
           : "dans " + forecast[0] + " min")}">
       </li>`
     )}
         `}
-      </ul>`;
+      </ul>
+      <ul class="oneHourLabel">
+      <li></li>
+      <li>10</li>
+      <li>20</li>
+      <li>30</li>
+      <li>40</li>
+      <li>50</li>
+      </ul>
+     </div>`;
   }
 
   renderAlertForecast() {
@@ -311,6 +333,7 @@ class WeatherCard extends LitElement {
     }
 
     const lang = this.hass.selectedLanguage || this.hass.language;
+    const isDaily = this.isDailyForecast(forecast);
 
     this.numberElements++;
     return html`
@@ -323,22 +346,27 @@ class WeatherCard extends LitElement {
             : 5
         )
         .map(
-          (daily) => this.renderDailyForecast(daily, lang)
+          (daily) => this.renderDailyForecast(daily, lang, isDaily)
         )}
       </div>`;
   }
 
-  renderDailyForecast(daily, lang) {
+  isDailyForecast(forecast) {
+    const diff = new Date(forecast[1].datetime) - new Date(forecast[0].datetime);
+    return diff > 3600000;
+  }
+
+  renderDailyForecast(daily, lang, isDaily) {
     return html`
         <div class="day">
           <div class="dayname">
-            ${this._config.hourly_forecast
-        ? new Date(daily.datetime).toLocaleTimeString(lang, {
+            ${isDaily
+        ? new Date(daily.datetime).toLocaleDateString(lang, {
+          weekday: "short",
+        })
+        : new Date(daily.datetime).toLocaleTimeString(lang, {
           hour: "2-digit",
           minute: "2-digit",
-        })
-        : new Date(daily.datetime).toLocaleDateString(lang, {
-          weekday: "short",
         })}
           </div>
           <i class="icon" style="background: none, url('${this.getWeatherIcon(
@@ -394,6 +422,15 @@ class WeatherCard extends LitElement {
     }
 
     return rainForecastList;
+  }
+
+  getOneHourForecastTime(rainForecastEntity) {
+    let rainForecastTimeRef = new Date(rainForecastEntity.attributes["forecast_time_ref"]);
+    let rainForecastStartTime = rainForecastTimeRef.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    rainForecastTimeRef.setHours(rainForecastTimeRef.getHours() + 1);
+    let rainForecastEndTime = rainForecastTimeRef.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+    return [rainForecastStartTime, rainForecastEndTime];
   }
 
   getAlertForecast(color, alertEntity) {
@@ -522,7 +559,6 @@ class WeatherCard extends LitElement {
         padding: 1.2em 0;
         margin-bottom: 3.5em;
       }
-      
       .variations {
         display: flex;
         flex-flow: row wrap;
@@ -550,9 +586,6 @@ class WeatherCard extends LitElement {
         margin-left: 8px;
         float: right;
       }
-
-
-
       .unit {
         font-size: 0.8em;
       }
@@ -591,11 +624,11 @@ class WeatherCard extends LitElement {
         font-weight: 300;
       }
       .icon.bigger {
-        width: 90px;
-        height: 90px;
-        margin-top: -2em;
+        width: 10em;
+        height: 10em;
+        margin-top: -4em;
         position: absolute;
-        left: 1em;
+        left: 0em;
       }
       .icon {
         width: 50px;
@@ -626,7 +659,7 @@ class WeatherCard extends LitElement {
         height: 15px;
         padding: 0px;
         color: var(--primary-text-color);
-        margin: 10px 2px;
+        margin: 0px 0px 2px 2px;
         overflow: hidden;
         list-style: none;
       }
@@ -643,6 +676,41 @@ class WeatherCard extends LitElement {
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
         border: 0;
+      }
+      .rain-0min, .rain-5min, .rain-10min, .rain-15min, .rain-20min, .rain-25min {
+        flex: 1 1 0;
+      }
+      .rain-35min, .rain-45min, .rain-55min {
+        flex: 2 1 0;
+      }
+      .oneHourLabel {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 0px;
+        margin-top: 0px;
+        color: var(--primary-text-color);
+        overflow: hidden;
+        list-style: none;
+      }
+      .oneHourLabel li {
+        flex: 1 1 0;
+      }
+      .oneHourHeader {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 0px;
+        margin-bottom: 0px;
+        color: var(--primary-text-color);
+        overflow: hidden;
+        list-style: none;
+      }
+      .oneHourHeader li {
+        flex: 1 1 0;
+      }
+      .oneHourHeader li:last-child {
+        text-align:right;
       }
       .vigilance {
         display: block;
@@ -673,4 +741,4 @@ class WeatherCard extends LitElement {
     `;
   }
 }
-customElements.define("weather-card", WeatherCard);
+customElements.define("meteofrance-weather-card", MeteofranceWeatherCard);
