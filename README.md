@@ -7,8 +7,6 @@ Petites adaptations de la carte https://github.com/hacf-fr/lovelace-meteofrance-
 
 Les icônes viennent de https://icon-icons.com/fr/pack/The-Weather-is-Nice-Today/1370, création de Laura Reen. J'ai parfois apporté de légère modifications.
 
-# Lovelace Météo France weather-card
-
 Projet reprit de https://github.com/Imbuzi/meteo-france-weather-card, pour une adaptation de la carte https://github.com/bramkragten/weather-card dédié à Météo France.
 
 ![Weather Card](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/carte-IconesFixe.png?raw=true)
