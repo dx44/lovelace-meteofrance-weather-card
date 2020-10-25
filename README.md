@@ -4,7 +4,7 @@ Adaptation avec remplacement des iconnes de la carte https://github.com/dx44/wea
 
 Les icones viennent de https://icon-icons.com/fr/pack/The-Weather-is-Nice-Today/1370 avec parfois de petites adaptations.
 
-![Weather Card](http://axellum.free.fr/meteofrance.png)
+![Weather Card](https://github.com/Axellum/weather-card/blob/Meteo-France/weather-card.gif.png?raw=true)
 
 Exemple de réglages:
 
