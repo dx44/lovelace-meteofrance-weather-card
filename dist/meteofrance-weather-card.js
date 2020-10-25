@@ -288,9 +288,9 @@ class MeteofranceWeatherCard extends LitElement {
       <li></li>
       <li>10</li>
       <li>20</li>
-      <li>30</li>
-      <li>40</li>
-      <li>50</li>
+      <li>35</li>
+      <li>45</li>
+      <li>55</li>
       </ul>
      </div>`;
   }
