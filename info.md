@@ -1,48 +1,49 @@
-# Lovelace animated weather card
+# Lovelace Météo France weather-card - Version à icones fixes
 
-Originally created for the [old UI](https://community.home-assistant.io/t/custom-ui-weather-state-card-with-a-question/23008) converted by @arsaboo and @ciotlosm to [Lovelace](https://community.home-assistant.io/t/custom-ui-weather-state-card-with-a-question/23008/291) and now converted to Lit to make it even better.
+Petites adaptations de la carte https://github.com/hacf-fr/lovelace-meteofrance-weather-card:
+- Remplacement des icônes (resortent mieux avec un thème sombre).
+- Modification de la position de l icône du temps actuel.
+- Différentiation des icônes sur certains arguments (notamment le brouillard).
 
-This card uses the awesome [animated SVG weather icons by amCharts](https://www.amcharts.com/free-animated-svg-weather-icons/).
+Les icônes viennent de https://icon-icons.com/fr/pack/The-Weather-is-Nice-Today/1370, création de Laura Reen. J'ai parfois apporté de légère modifications.
 
-![Weather Card](https://github.com/bramkragten/custom-ui/blob/master/weather-card/weather-card.gif?raw=true)
+# Lovelace Météo France weather-card
 
-Thanks for all picking this card up.
+Projet reprit de https://github.com/Imbuzi/meteo-france-weather-card, pour une adaptation de la carte https://github.com/bramkragten/weather-card dédié à Météo France.
+
+![Weather Card](https://github.com/Axellum/weather-card/blob/Meteo-France/weather-card.gif.png?raw=true)
 
 ## Installation:
 
-### If you are using Firefox:
+Ajoutez l'adresse https://github.com/hacf-fr/lovelace-meteofrance-weather-card dans "Custom repositories" sur HACS, "Category": "Lovelace".
 
-Firefox < 66 does not support all the needed functions yet for the editor.
-You change this by enabling `javascript.options.dynamicImport` in `about:config`.
-
-Add the following to resources in your lovelace config:
+Ajouter dans "Configuration" / "Tableaux de bord Lovelace" / "Ressources" l'adresse de la carte:
 
 ```yaml
-resources:
-  - url: /hacsfiles/weather-card/weather-card.js
-    type: module
+/hacsfiles/lovelace-meteofrance-weather-card/meteofrance-weather-card.js
 ```
 
 ## Configuration:
 
-And add a card with type `custom:weather-card`:
+1/ Ajouter une carte manuel.
 
+2/ Mettre:
 ```yaml
-- type: custom:weather-card
-  entity: weather.yourweatherentity
-  name: Optional name
+type: 'custom:meteofrance-weather-card'
 ```
+3/ "Afficher l'éditeur de code" (cela affichera l'éditeur visuel)
 
-If you want to use your local icons add the location to the icons:
+4/ Choisir votre weather Météo France en Entity.
+Cela renseignera automatique les différents sensor, il vous faudra renseigner Vigilance Météo par le sensor vigilance de votre région.
 
+![reglages_graph](https://github.com/Axellum/weather-card/blob/Meteo-France/reglages_graph.png?raw=true)
+
+  -Manuel:
 ```yaml
-- type: custom:weather-card
-  entity: weather.yourweatherentity
-  icons: "/community_plugin/weather-card/icons/"
-```
-
-You can choose wich elements of the weather card you want to show:
-
+current: true
+entity: weather.VotreVille
+type: 'custom:meteofrance-weather-card'
+number_of_forecasts: '5'
 The 3 different rows, being:
 
 - The current weather icon, the current temperature and title
