@@ -9,17 +9,13 @@ Les icônes viennent de https://icon-icons.com/fr/pack/The-Weather-is-Nice-Today
 
 Projet reprit de https://github.com/Imbuzi/meteo-france-weather-card, pour une adaptation de la carte https://github.com/bramkragten/weather-card dédié à Météo France.
 
+![Weather Card](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/carte-icone-fdbl.png?raw=true)
+
 ![Weather Card](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/carte-IconesFixe.png?raw=true)
 
 ## Installation:
 
 Ajoutez l'adresse https://github.com/Axellum/lovelace-meteofrance-weather-card dans "Custom repositories" sur HACS, "Category": "Lovelace".
-
-Ajouter dans "Configuration" / "Tableaux de bord Lovelace" / "Ressources" l'adresse de la carte:
-
-```yaml
-/hacsfiles/lovelace-meteofrance-weather-card/meteofrance-weather-card.js
-```
 
 ## Configuration:
 
