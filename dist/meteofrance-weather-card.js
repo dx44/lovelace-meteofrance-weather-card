@@ -421,14 +421,8 @@ class MeteofranceWeatherCard extends LitElement {
     )) {
       if (time != undefined && time.match(/[0-9]*min/g)) {
         time = time.replace("min", "").trim();
-        if ( time == 35 ){
-            time = 30;
-        } else if ( time == 45 ){
-            time = 40;
-        } else if ( time == 55 ){
-            time = 50;
-        } else {
-            time = time;
+        if ( time > 30 ){
+            time -= 5; // Adjustment to reflect website rendering.
         }
         rainForecastList.push([time, rainForecastValues.get(value), value]);
       }
