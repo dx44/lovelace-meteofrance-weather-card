@@ -417,6 +417,15 @@ class MeteofranceWeatherCard extends LitElement {
     )) {
       if (time != undefined && time.match(/[0-9]*min/g)) {
         time = time.replace("min", "").trim();
+        if ( time == 35 ){
+            time = 30;
+        } else if ( time == 45 ){
+            time = 40;
+        } else if ( time == 55 ){
+            time = 50;
+        } else {
+            time = time;
+        }
         rainForecastList.push([time, rainForecastValues.get(value), value]);
       }
     }
@@ -680,7 +689,7 @@ class MeteofranceWeatherCard extends LitElement {
       .rain-0min, .rain-5min, .rain-10min, .rain-15min, .rain-20min, .rain-25min {
         flex: 1 1 0;
       }
-      .rain-35min, .rain-45min, .rain-55min {
+      .rain-30min, .rain-40min, .rain-50min {
         flex: 2 1 0;
       }
       .oneHourLabel {
