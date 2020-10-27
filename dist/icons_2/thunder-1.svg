@@ -21,7 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -38,7 +38,7 @@
      inkscape:window-height="791"
      id="namedview45"
      showgrid="false"
-     inkscape:zoom="5.205582"
+     inkscape:zoom="2.9927033"
      inkscape:cx="32"
      inkscape:cy="36.417587"
      inkscape:window-x="0"
@@ -51,7 +51,7 @@
     <style
        id="style2">.cls-1{fill:#efcc00;}.cls-2{fill:none;stroke:#efcc00;stroke-linecap:round;stroke-miterlimit:10;stroke-width:3px;}.cls-3{fill:url(#linear-gradient);}.cls-4{fill:url(#linear-gradient-2);}.cls-5{fill:#0baeff;}</style>
     <linearGradient
-       gradientTransform="matrix(-0.7414105,0,0,0.7414105,-163.32476,9.6292948)"
+       gradientTransform="matrix(-0.65647744,0,0,0.65647744,-143.26316,12.015211)"
        gradientUnits="userSpaceOnUse"
        id="linear-gradient"
        x1="-249.28"
@@ -68,7 +68,7 @@
          id="stop6" />
     </linearGradient>
     <linearGradient
-       gradientTransform="matrix(0,-0.7414105,-0.7414105,0,-15.650173,-181.78166)"
+       gradientTransform="matrix(0,-0.65647744,-0.65647744,0,-16.853928,-158.71672)"
        gradientUnits="userSpaceOnUse"
        id="linear-gradient-2"
        x1="-316.5"
@@ -88,83 +88,83 @@
   </defs>
   <circle
      class="cls-1"
-     cx="36.856071"
-     cy="25.940325"
-     r="9.3343582"
+     cx="33.985748"
+     cy="26.457714"
+     r="8.2650509"
      id="circle18"
-     style="stroke-width:0.74141" />
+     style="stroke-width:0.656477" />
   <line
      class="cls-2"
-     x1="36.856071"
-     x2="36.856071"
-     y1="11.112116"
-     y2="14.403978"
+     x1="33.985748"
+     x2="33.985748"
+     y1="13.328166"
+     y2="16.242926"
      id="line20" />
   <line
      class="cls-2"
-     x1="36.856071"
-     x2="36.856071"
-     y1="37.476677"
-     y2="40.768536"
+     x1="33.985748"
+     x2="33.985748"
+     y1="36.672504"
+     y2="39.587261"
      id="line22" />
   <line
      class="cls-2"
-     x1="22.027863"
-     x2="25.327139"
-     y1="25.940325"
-     y2="25.940325"
+     x1="20.856199"
+     x2="23.777523"
+     y1="26.457714"
+     y2="26.457714"
      id="line24" />
   <line
      class="cls-2"
-     x1="48.392422"
-     x2="51.684284"
-     y1="25.940325"
-     y2="25.940325"
+     x1="44.200539"
+     x2="47.115299"
+     y1="26.457714"
+     y2="26.457714"
      id="line26" />
   <line
      class="cls-2"
-     x1="26.372528"
-     x2="28.700558"
-     y1="15.456781"
-     y2="17.784809"
+     x1="24.703157"
+     x2="26.764496"
+     y1="17.175123"
+     y2="19.236462"
      id="line28" />
   <line
      class="cls-2"
-     x1="45.011589"
-     x2="47.339615"
-     y1="34.09584"
-     y2="36.42387"
+     x1="41.207001"
+     x2="43.268337"
+     y1="33.678967"
+     y2="35.740303"
      id="line30" />
   <line
      class="cls-2"
-     x1="26.372528"
-     x2="28.700558"
-     y1="36.42387"
-     y2="34.09584"
+     x1="24.703157"
+     x2="26.764496"
+     y1="35.740303"
+     y2="33.678967"
      id="line32" />
   <line
      class="cls-2"
-     x1="45.011589"
-     x2="47.339615"
-     y1="17.784809"
-     y2="15.456781"
+     x1="41.207001"
+     x2="43.268337"
+     y1="19.236462"
+     y2="17.175123"
      id="line34" />
   <path
      class="cls-3"
-     d="m 24.771082,21.417722 a 12.96727,12.96727 0 0 1 11.491862,6.909946 10.194394,10.194394 0 1 1 5.130561,18.994936 l -16.622423,0.04449 a 12.974684,12.974684 0 0 1 0,-25.949367 z"
+     d="m 23.285166,22.453202 a 11.481791,11.481791 0 0 1 10.1754,6.11837 9.0265645,9.0265645 0 1 1 4.542824,16.818951 l -14.718224,0.03939 a 11.488356,11.488356 0 0 1 0,-22.976711 z"
      id="path36"
-     style="fill:url(#linear-gradient);stroke-width:0.74141" />
+     style="fill:url(#linear-gradient);stroke-width:0.656477" />
   <circle
      class="cls-4"
-     cx="-24.621243"
-     cy="49.834972"
-     r="10.194394"
+     cx="-24.797308"
+     cy="46.366829"
+     r="9.0265646"
      transform="rotate(-74.39)"
      id="circle38"
-     style="fill:url(#linear-gradient-2);stroke-width:0.74141" />
+     style="fill:url(#linear-gradient-2);stroke-width:0.656477" />
   <polygon
      class="cls-1"
-     points="33.13,63.65 43.25,50.87 38.46,50.87 42.72,42.35 33.13,42.35 31,54.6 35.26,54.6 "
+     points="38.46,50.87 42.72,42.35 33.13,42.35 31,54.6 35.26,54.6 33.13,63.65 43.25,50.87 "
      id="polygon40"
-     transform="matrix(0.7414105,0,0,0.7414105,7.347935,9.6292948)" />
+     transform="matrix(0.65647744,0,0,0.65647744,7.857946,12.015211)" />
 </svg>

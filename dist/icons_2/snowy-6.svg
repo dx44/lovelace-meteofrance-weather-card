@@ -11,7 +11,7 @@
    id="Layer_1"
    viewBox="0 0 64 64"
    version="1.1"
-   sodipodi:docname="snowy-1.svg"
+   sodipodi:docname="snowy-6.svg"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
   <metadata
      id="metadata75">
@@ -21,7 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -38,19 +38,20 @@
      inkscape:window-height="1173"
      id="namedview73"
      showgrid="false"
-     inkscape:zoom="14.907344"
+     inkscape:zoom="14.109772"
      inkscape:cx="32"
      inkscape:cy="32"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="Layer_1" />
+     inkscape:current-layer="Layer_1"
+     inkscape:document-rotation="0" />
   <defs
      id="defs14">
     <style
        id="style2">.cls-1{fill:#efcc00;}.cls-2,.cls-5{fill:none;stroke-linecap:round;stroke-miterlimit:10;}.cls-2{stroke:#efcc00;stroke-width:3px;}.cls-3{fill:url(#linear-gradient);}.cls-4{fill:url(#linear-gradient-2);}.cls-5{stroke:#9c9fa0;stroke-width:2px;}.cls-6{fill:#c4c4c4;}.cls-7{fill:#e0e0e0;}.cls-8{fill:#fff;}</style>
     <linearGradient
-       gradientTransform="matrix(-0.7414105,0,0,0.7414105,-382.78227,9.6292948)"
+       gradientTransform="matrix(-0.6735743,0,0,0.6735743,-346.67952,11.950829)"
        gradientUnits="userSpaceOnUse"
        id="linear-gradient"
        x1="-545.28"
@@ -67,7 +68,7 @@
          id="stop6" />
     </linearGradient>
     <linearGradient
-       gradientTransform="matrix(0,-0.7414105,-0.7414105,0,-47.197189,-411.95997)"
+       gradientTransform="matrix(0,-0.6735743,-0.6735743,0,-45.672761,-372.36562)"
        gradientUnits="userSpaceOnUse"
        id="linear-gradient-2"
        x1="-626.95"
@@ -87,178 +88,178 @@
   </defs>
   <circle
      class="cls-1"
-     cx="36.856071"
-     cy="25.940325"
-     r="9.3343582"
+     cx="34.563538"
+     cy="26.769463"
      id="circle18"
-     style="stroke-width:0.74141" />
+     style="stroke-width:0.673574"
+     r="8.4803009" />
   <line
      class="cls-2"
-     x1="36.856071"
-     x2="36.856071"
-     y1="11.112116"
-     y2="14.403978"
+     x1="34.563538"
+     x2="34.563538"
+     y1="13.297977"
+     y2="16.288647"
      id="line20" />
   <line
      class="cls-2"
-     x1="36.856071"
-     x2="36.856071"
-     y1="37.476677"
-     y2="40.768536"
+     x1="34.563538"
+     x2="34.563538"
+     y1="37.250282"
+     y2="40.240948"
      id="line22" />
   <line
      class="cls-2"
-     x1="22.027863"
-     x2="25.327139"
-     y1="25.940325"
-     y2="25.940325"
+     x1="21.092052"
+     x2="24.089458"
+     y1="26.769463"
+     y2="26.769463"
      id="line24" />
   <line
      class="cls-2"
-     x1="48.392422"
-     x2="51.684284"
-     y1="25.940325"
-     y2="25.940325"
+     x1="45.044357"
+     x2="48.035027"
+     y1="26.769463"
+     y2="26.769463"
      id="line26" />
   <line
      class="cls-2"
-     x1="26.372528"
-     x2="28.700558"
-     y1="15.456781"
-     y2="17.784809"
+     x1="25.039198"
+     x2="27.154222"
+     y1="17.245123"
+     y2="19.360146"
      id="line28" />
   <line
      class="cls-2"
-     x1="45.011589"
-     x2="47.339615"
-     y1="34.09584"
-     y2="36.42387"
+     x1="41.972858"
+     x2="44.087879"
+     y1="34.17878"
+     y2="36.293804"
      id="line30" />
   <line
      class="cls-2"
-     x1="26.372528"
-     x2="28.700558"
-     y1="36.42387"
-     y2="34.09584"
+     x1="25.039198"
+     x2="27.154222"
+     y1="36.293804"
+     y2="34.17878"
      id="line32" />
   <line
      class="cls-2"
-     x1="45.011589"
-     x2="47.339615"
-     y1="17.784809"
-     y2="15.456781"
+     x1="41.972858"
+     x2="44.087879"
+     y1="19.360146"
+     y2="17.245123"
      id="line34" />
   <path
      class="cls-3"
-     d="m 24.771082,21.417722 a 12.96727,12.96727 0 0 1 11.491862,6.909946 10.194394,10.194394 0 1 1 5.130561,18.994936 l -16.622423,0.04449 a 12.974684,12.974684 0 0 1 0,-25.949367 z"
+     d="m 23.584278,22.66066 a 11.780815,11.780815 0 0 1 10.440401,6.277713 9.2616463,9.2616463 0 1 1 4.661135,17.256973 l -15.101536,0.04042 a 11.787551,11.787551 0 0 1 0,-23.5751 z"
      id="path36"
-     style="fill:url(#linear-gradient);stroke-width:0.74141" />
+     style="fill:url(#linear-gradient);stroke-width:0.673574" />
   <circle
      class="cls-4"
-     cx="-24.621243"
-     cy="49.834972"
-     r="10.194394"
+     cx="-25.162424"
+     cy="47.176872"
      transform="rotate(-74.39)"
      id="circle38"
-     style="fill:url(#linear-gradient-2);stroke-width:0.74141" />
+     style="fill:url(#linear-gradient-2);stroke-width:0.673574"
+     r="9.2616463" />
   <line
      class="cls-5"
-     x1="31.169455"
-     x2="31.169455"
-     y1="33.42857"
-     y2="40.93906"
+     x1="29.397224"
+     x2="29.397224"
+     y1="33.572563"
+     y2="40.39587"
      id="line40" />
   <polyline
      class="cls-5"
      points="33.3 30.79 32.13 32.26 30.95 30.79"
      id="polyline42"
-     transform="matrix(0.7414105,0,0,0.7414105,7.347935,9.6292948)" />
+     transform="matrix(0.6735743,0,0,0.6735743,7.7552818,11.950829)" />
   <polyline
      class="cls-5"
      points="30.95 43.55 32.13 42.08 33.3 43.55"
      id="polyline44"
-     transform="matrix(0.7414105,0,0,0.7414105,7.347935,9.6292948)" />
+     transform="matrix(0.6735743,0,0,0.6735743,7.7552818,11.950829)" />
   <line
      class="cls-5"
-     x1="34.416832"
-     x2="27.914661"
-     y1="35.30434"
-     y2="39.063293"
+     x1="32.347481"
+     x2="26.440231"
+     y1="35.276707"
+     y2="38.69173"
      id="line46" />
   <polyline
      class="cls-5"
      points="38.24 35 36.38 34.71 37.06 32.96"
      id="polyline48"
-     transform="matrix(0.7414105,0,0,0.7414105,7.347935,9.6292948)" />
+     transform="matrix(0.6735743,0,0,0.6735743,7.7552818,11.950829)" />
   <polyline
      class="cls-5"
      points="26.01 39.34 27.87 39.62 27.19 41.38"
      id="polyline50"
-     transform="matrix(0.7414105,0,0,0.7414105,7.347935,9.6292948)" />
+     transform="matrix(0.6735743,0,0,0.6735743,7.7552818,11.950829)" />
   <line
      class="cls-5"
-     x1="34.416832"
-     x2="27.914661"
-     y1="39.063293"
-     y2="35.30434"
+     x1="32.347481"
+     x2="26.440231"
+     y1="38.69173"
+     y2="35.276707"
      id="line52" />
   <polyline
      class="cls-5"
      points="37.06 41.38 36.38 39.62 38.24 39.34"
      id="polyline54"
-     transform="matrix(0.7414105,0,0,0.7414105,7.347935,9.6292948)" />
+     transform="matrix(0.6735743,0,0,0.6735743,7.7552818,11.950829)" />
   <polyline
      class="cls-5"
      points="27.19 32.96 27.87 34.71 26.01 35"
      id="polyline56"
-     transform="matrix(0.7414105,0,0,0.7414105,7.347935,9.6292948)" />
+     transform="matrix(0.6735743,0,0,0.6735743,7.7552818,11.950829)" />
   <circle
      class="cls-6"
-     cx="26.995314"
-     cy="52.356781"
-     r="1.482821"
+     cx="25.605001"
+     cy="50.768913"
      id="circle58"
-     style="stroke-width:0.74141" />
+     style="stroke-width:0.673574"
+     r="1.3471485" />
   <circle
      class="cls-7"
-     cx="34.409416"
-     cy="54.581013"
-     r="1.1121157"
+     cx="32.34074"
+     cy="52.789639"
      id="circle60"
-     style="stroke-width:0.74141" />
+     style="stroke-width:0.673574"
+     r="1.0103614" />
   <circle
      class="cls-7"
-     cx="21.06403"
-     cy="49.39114"
-     r="1.1121157"
+     cx="20.216406"
+     cy="48.074619"
      id="circle62"
-     style="stroke-width:0.74141" />
+     style="stroke-width:0.673574"
+     r="1.0103614" />
   <circle
      class="cls-8"
-     cx="31.443777"
-     cy="49.39114"
-     r="0.74141049"
+     cx="29.646448"
+     cy="48.074619"
      id="circle64"
-     style="stroke-width:0.74141" />
+     style="stroke-width:0.673574"
+     r="0.67357427" />
   <circle
      class="cls-8"
-     cx="41.823524"
-     cy="54.581013"
-     r="0.74141049"
+     cx="39.076488"
+     cy="52.789639"
      id="circle66"
-     style="stroke-width:0.74141" />
+     style="stroke-width:0.673574"
+     r="0.67357427" />
   <circle
      class="cls-8"
-     cx="20.322618"
-     cy="54.581013"
-     r="0.74141049"
+     cx="19.542831"
+     cy="52.789639"
      id="circle68"
-     style="stroke-width:0.74141" />
+     style="stroke-width:0.673574"
+     r="0.67357427" />
   <circle
      class="cls-6"
-     cx="38.85788"
-     cy="50.132549"
-     r="1.482821"
+     cx="36.382187"
+     cy="48.748192"
      id="circle70"
-     style="stroke-width:0.74141" />
+     style="stroke-width:0.673574"
+     r="1.3471485" />
 </svg>

@@ -11,7 +11,7 @@
    id="Layer_1"
    viewBox="0 0 64 64"
    version="1.1"
-   sodipodi:docname="snowy-2.svg"
+   sodipodi:docname="snowy-4.svg"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
   <metadata
      id="metadata55">
@@ -21,7 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -38,11 +38,11 @@
      inkscape:window-height="1263"
      id="namedview53"
      showgrid="false"
-     inkscape:zoom="14.548165"
+     inkscape:zoom="13.982089"
      inkscape:cx="32"
      inkscape:cy="34.642504"
-     inkscape:window-x="1443"
-     inkscape:window-y="162"
+     inkscape:window-x="537"
+     inkscape:window-y="670"
      inkscape:window-maximized="0"
      inkscape:current-layer="Layer_1"
      inkscape:document-rotation="0" />
@@ -51,7 +51,7 @@
     <style
        id="style2">.cls-1{fill:#efcc00;}.cls-2,.cls-5,.cls-6{fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:3px;}.cls-2{stroke:#efcc00;}.cls-3{fill:url(#linear-gradient);}.cls-4{fill:url(#linear-gradient-2);}.cls-5{stroke:#0baeff;}.cls-6{stroke:#b9c1c6;}</style>
     <linearGradient
-       gradientTransform="matrix(-0.7414105,0,0,0.7414105,-53.596008,9.6292985)"
+       gradientTransform="matrix(-0.6503033,0,0,0.6503033,-45.55991,11.927714)"
        gradientUnits="userSpaceOnUse"
        id="linear-gradient"
        x1="-101.28"
@@ -68,7 +68,7 @@
          id="stop6" />
     </linearGradient>
     <linearGradient
-       gradientTransform="matrix(0,-0.7414105,-0.7414105,0,-2.9127446,-88.838448)"
+       gradientTransform="matrix(0,-0.6503033,-0.6503033,0,-5.5179102,-75.588232)"
        gradientUnits="userSpaceOnUse"
        id="linear-gradient-2"
        x1="-191.14"
@@ -88,180 +88,180 @@
   </defs>
   <circle
      class="cls-1"
-     cx="36.856071"
-     cy="25.940325"
-     r="9.3343582"
+     cx="33.777092"
+     cy="26.234383"
      id="circle18"
-     style="stroke-width:0.74141" />
+     style="stroke-width:0.650303"
+     r="8.1873188" />
   <line
      class="cls-2"
-     x1="36.856071"
-     x2="36.856071"
-     y1="11.112116"
-     y2="14.403979"
+     x1="33.777092"
+     x2="33.777092"
+     y1="13.228317"
+     y2="16.115665"
      id="line20" />
   <line
      class="cls-2"
-     x1="36.856071"
-     x2="36.856071"
-     y1="37.476696"
-     y2="40.768555"
+     x1="33.777092"
+     x2="33.777092"
+     y1="36.353123"
+     y2="39.240467"
      id="line22" />
   <line
      class="cls-2"
-     x1="22.027863"
-     x2="25.327139"
-     y1="25.940325"
-     y2="25.940325"
+     x1="20.771027"
+     x2="23.664875"
+     y1="26.234383"
+     y2="26.234383"
      id="line24" />
   <line
      class="cls-2"
-     x1="48.392422"
-     x2="51.684284"
-     y1="25.940325"
-     y2="25.940325"
+     x1="43.895813"
+     x2="46.783157"
+     y1="26.234383"
+     y2="26.234383"
      id="line26" />
   <line
      class="cls-2"
-     x1="26.372528"
-     x2="28.700558"
-     y1="15.456783"
-     y2="17.784809"
+     x1="24.581802"
+     x2="26.623756"
+     y1="17.039097"
+     y2="19.081045"
      id="line28" />
   <line
      class="cls-2"
-     x1="45.011589"
-     x2="47.339615"
-     y1="34.09586"
-     y2="36.423889"
+     x1="40.930428"
+     x2="42.972378"
+     y1="33.387737"
+     y2="35.429688"
      id="line30" />
   <line
      class="cls-2"
-     x1="26.372528"
-     x2="28.700558"
-     y1="36.423889"
-     y2="34.09586"
+     x1="24.581802"
+     x2="26.623756"
+     y1="35.429688"
+     y2="33.387737"
      id="line32" />
   <line
      class="cls-2"
-     x1="45.011589"
-     x2="47.339615"
-     y1="17.784809"
-     y2="15.456783"
+     x1="40.930428"
+     x2="42.972378"
+     y1="19.081045"
+     y2="17.039097"
      id="line34" />
   <path
      class="cls-3"
-     d="m 24.771082,21.417725 a 12.96727,12.96727 0 0 1 11.491862,6.909946 10.194394,10.194394 0 1 1 5.130561,18.994936 l -16.622423,0.04449 a 12.974684,12.974684 0 0 1 0,-25.949367 z"
+     d="m 23.177149,22.267537 a 11.373805,11.373805 0 0 1 10.0797,6.060827 8.94167,8.94167 0 1 1 4.500099,16.660769 l -14.579799,0.03902 a 11.380308,11.380308 0 0 1 0,-22.760616 z"
      id="path36"
-     style="fill:url(#linear-gradient);stroke-width:0.74141" />
+     style="fill:url(#linear-gradient);stroke-width:0.650303" />
   <circle
      class="cls-4"
-     cx="-24.621248"
-     cy="49.834972"
-     r="10.194394"
+     cx="-24.558794"
+     cy="46.044495"
      transform="rotate(-74.39)"
      id="circle38"
-     style="fill:url(#linear-gradient-2);stroke-width:0.74141" />
+     style="fill:url(#linear-gradient-2);stroke-width:0.650303"
+     r="8.9416704" />
   <line
      class="cls-5"
-     x1="26.995314"
-     x2="26.995314"
-     y1="49.294777"
-     y2="51.519009"
+     x1="25.128059"
+     x2="25.128059"
+     y1="46.718956"
+     y2="48.669865"
      id="line40" />
   <line
      class="cls-6"
-     x1="26.995314"
-     x2="26.995314"
-     y1="54.48465"
-     y2="54.48465"
+     x1="25.128059"
+     x2="25.128059"
+     y1="51.271076"
+     y2="51.271076"
      id="line42" />
   <line
      class="cls-5"
-     x1="31.443777"
-     x2="31.443777"
-     y1="50.777596"
-     y2="53.001827"
+     x1="29.029879"
+     x2="29.029879"
+     y1="48.019558"
+     y2="49.97047"
      id="line44" />
   <line
      class="cls-6"
-     x1="31.443777"
-     x2="31.443777"
-     y1="55.967468"
-     y2="55.967468"
+     x1="29.029879"
+     x2="29.029879"
+     y1="52.571682"
+     y2="52.571682"
      id="line46" />
   <line
      class="cls-5"
-     x1="35.892239"
-     x2="35.892239"
-     y1="49.294777"
-     y2="51.519009"
+     x1="32.931698"
+     x2="32.931698"
+     y1="46.718956"
+     y2="48.669865"
      id="line48" />
   <line
      class="cls-6"
-     x1="35.892239"
-     x2="35.892239"
-     y1="54.48465"
-     y2="54.48465"
+     x1="32.931698"
+     x2="32.931698"
+     y1="51.271076"
+     y2="51.271076"
      id="line50" />
   <line
      class="cls-5"
-     x1="30.909962"
-     x2="30.909962"
-     y1="34.273796"
-     y2="41.784286"
+     x1="28.561661"
+     x2="28.561661"
+     y1="33.543808"
+     y2="40.131382"
      id="line40-1"
-     style="fill:none;stroke:#9c9fa0;stroke-width:1.48282px;stroke-linecap:round;stroke-miterlimit:10" />
+     style="fill:none;stroke:#9c9fa0;stroke-width:1.30061px;stroke-linecap:round;stroke-miterlimit:10" />
   <polyline
      class="cls-5"
      points="33.3 30.79 32.13 32.26 30.95 30.79"
      id="polyline42"
-     transform="matrix(0.7414105,0,0,0.7414105,7.088441,10.474522)"
+     transform="matrix(0.6503033,0,0,0.6503033,7.6674144,12.669074)"
      style="fill:none;stroke:#9c9fa0;stroke-width:2px;stroke-linecap:round;stroke-miterlimit:10" />
   <polyline
      class="cls-5"
      points="30.95 43.55 32.13 42.08 33.3 43.55"
      id="polyline44"
-     transform="matrix(0.7414105,0,0,0.7414105,7.088441,10.474522)"
+     transform="matrix(0.6503033,0,0,0.6503033,7.6674144,12.669074)"
      style="fill:none;stroke:#9c9fa0;stroke-width:2px;stroke-linecap:round;stroke-miterlimit:10" />
   <line
      class="cls-5"
-     x1="34.157337"
-     x2="27.655169"
-     y1="36.149567"
-     y2="39.90852"
+     x1="31.409986"
+     x2="25.706829"
+     y1="35.189075"
+     y2="38.486115"
      id="line46-8"
-     style="fill:none;stroke:#9c9fa0;stroke-width:1.48282px;stroke-linecap:round;stroke-miterlimit:10" />
+     style="fill:none;stroke:#9c9fa0;stroke-width:1.30061px;stroke-linecap:round;stroke-miterlimit:10" />
   <polyline
      class="cls-5"
      points="38.24 35 36.38 34.71 37.06 32.96"
      id="polyline48"
-     transform="matrix(0.7414105,0,0,0.7414105,7.088441,10.474522)"
+     transform="matrix(0.6503033,0,0,0.6503033,7.6674144,12.669074)"
      style="fill:none;stroke:#9c9fa0;stroke-width:2px;stroke-linecap:round;stroke-miterlimit:10" />
   <polyline
      class="cls-5"
      points="26.01 39.34 27.87 39.62 27.19 41.38"
      id="polyline50"
-     transform="matrix(0.7414105,0,0,0.7414105,7.088441,10.474522)"
+     transform="matrix(0.6503033,0,0,0.6503033,7.6674144,12.669074)"
      style="fill:none;stroke:#9c9fa0;stroke-width:2px;stroke-linecap:round;stroke-miterlimit:10" />
   <line
      class="cls-5"
-     x1="34.157337"
-     x2="27.655169"
-     y1="39.90852"
-     y2="36.149567"
+     x1="31.409986"
+     x2="25.706829"
+     y1="38.486115"
+     y2="35.189075"
      id="line52"
-     style="fill:none;stroke:#9c9fa0;stroke-width:1.48282px;stroke-linecap:round;stroke-miterlimit:10" />
+     style="fill:none;stroke:#9c9fa0;stroke-width:1.30061px;stroke-linecap:round;stroke-miterlimit:10" />
   <polyline
      class="cls-5"
      points="37.06 41.38 36.38 39.62 38.24 39.34"
      id="polyline54"
-     transform="matrix(0.7414105,0,0,0.7414105,7.088441,10.474522)"
+     transform="matrix(0.6503033,0,0,0.6503033,7.6674144,12.669074)"
      style="fill:none;stroke:#9c9fa0;stroke-width:2px;stroke-linecap:round;stroke-miterlimit:10" />
   <polyline
      class="cls-5"
      points="27.19 32.96 27.87 34.71 26.01 35"
      id="polyline56"
-     transform="matrix(0.7414105,0,0,0.7414105,7.088441,10.474522)"
+     transform="matrix(0.6503033,0,0,0.6503033,7.6674144,12.669074)"
      style="fill:none;stroke:#9c9fa0;stroke-width:2px;stroke-linecap:round;stroke-miterlimit:10" />
 </svg>
