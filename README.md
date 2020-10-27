@@ -29,7 +29,7 @@ type: 'custom:meteofrance-weather-card'
 
 4/ Renseigner "Icones location" avec l'adresse 
 ```yaml
-/local/community/lovelace-meteofrance-weather-card/icons/
+/local/community/lovelace-meteofrance-weather-card/icons_2/
 ```
 5/ Choisir votre weather Météo France en Entity.
 Cela renseignera automatique les différents sensor, il vous faudra renseigner Vigilance Météo par le sensor vigilance de votre région.
