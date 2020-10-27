@@ -3,7 +3,7 @@
 Petites adaptations de la carte https://github.com/hacf-fr/lovelace-meteofrance-weather-card:
 
 - Remplacement des icônes (resortent mieux avec un thème sombre), possibilitée de remettre les icones d'origine.
-- Modification de la position de l icône du temps actuel.
+
 - Différentiation des icônes sur certains arguments (notamment le brouillard).
 
 Les icônes viennent de https://icon-icons.com/fr/pack/The-Weather-is-Nice-Today/1370, création de Laura Reen. J'ai parfois apporté de légère modifications.
