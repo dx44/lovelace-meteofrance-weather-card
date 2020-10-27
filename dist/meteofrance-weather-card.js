@@ -6,18 +6,18 @@ const weatherIconsDay = {
   clear: "day",
   "clear-night": "night",
   cloudy: "cloudy",
-  fog: "fog",
-  hail: "hail",
-  lightning: "thunder-1",
-  "lightning-rainy": "thunder-2",
-  partlycloudy: "cloudy-day",
-  pouring: "rainy-2",
+  fog: "cloudy-day-1",
+  hail: "rainy-7",
+  lightning: "thunder",
+  "lightning-rainy": "thunder",
+  partlycloudy: "cloudy-day-3",
+  pouring: "rainy-6",
   rainy: "rainy-5",
-  snowy: "snowy-1",
-  "snowy-rainy": "rainy-7",
+  snowy: "snowy-6",
+  "snowy-rainy": "snowy-4",
   sunny: "day",
-  windy: "windy",
-  "windy-variant": "windy",
+  windy: "cloudy-day-2",
+  "windy-variant": "cloudy-day-2",
   exceptional: "!!",
 };
 
@@ -417,15 +417,6 @@ class MeteofranceWeatherCard extends LitElement {
     )) {
       if (time != undefined && time.match(/[0-9]*min/g)) {
         time = time.replace("min", "").trim();
-        if ( time == 35 ){
-            time = 30;
-        } else if ( time == 45 ){
-            time = 40;
-        } else if ( time == 55 ){
-            time = 50;
-        } else {
-            time = time;
-        }
         rainForecastList.push([time, rainForecastValues.get(value), value]);
       }
     }
@@ -633,11 +624,11 @@ class MeteofranceWeatherCard extends LitElement {
         font-weight: 300;
       }
       .icon.bigger {
-        width: 90px;
-        height: 90px;
-        margin-top: -2em;
+        width: 10em;
+        height: 10em;
+        margin-top: -4em;
         position: absolute;
-        left: 1em;
+        left: 0em;
       }
       .icon {
         width: 50px;
@@ -689,7 +680,7 @@ class MeteofranceWeatherCard extends LitElement {
       .rain-0min, .rain-5min, .rain-10min, .rain-15min, .rain-20min, .rain-25min {
         flex: 1 1 0;
       }
-      .rain-30min, .rain-40min, .rain-50min {
+      .rain-35min, .rain-45min, .rain-55min {
         flex: 2 1 0;
       }
       .oneHourLabel {
