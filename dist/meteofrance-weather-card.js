@@ -6,7 +6,7 @@ const weatherIconsDay = {
   clear: "day",
   "clear-night": "night",
   cloudy: "cloudy",
-  fog: "cloudy",
+  fog: "cloudy-day-1",
   hail: "rainy-7",
   lightning: "thunder",
   "lightning-rainy": "thunder",
@@ -14,10 +14,10 @@ const weatherIconsDay = {
   pouring: "rainy-6",
   rainy: "rainy-5",
   snowy: "snowy-6",
-  "snowy-rainy": "rainy-7",
+  "snowy-rainy": "snowy-4",
   sunny: "day",
-  windy: "cloudy",
-  "windy-variant": "cloudy-day-3",
+  windy: "cloudy-day-2",
+  "windy-variant": "cloudy-day-2",
   exceptional: "!!",
 };
 
@@ -26,7 +26,9 @@ const weatherIconsNight = {
   clear: "night",
   sunny: "night",
   partlycloudy: "cloudy-night-3",
-  "windy-variant": "cloudy-night-3",
+  "windy-variant": "cloudy-night-2",
+  windy: "cloudy-night-2",
+  fog: "cloudy-night-1",
 };
 
 const windDirections = [
