@@ -1,7 +1,8 @@
 # Lovelace Météo France weather-card - Version à icones fixes
 
 Petites adaptations de la carte https://github.com/hacf-fr/lovelace-meteofrance-weather-card:
-- Remplacement des icônes (resortent mieux avec un thème sombre).
+
+- Remplacement des icônes (resortent mieux avec un thème sombre), possibilitée de remettre les icones d'origine.
 - Modification de la position de l icône du temps actuel.
 - Différentiation des icônes sur certains arguments (notamment le brouillard).
 
@@ -27,11 +28,14 @@ type: 'custom:meteofrance-weather-card'
 ```
 3/ "Afficher l'éditeur de code" (cela affichera l'éditeur visuel)
 
-4/ Renseigner "Icones location" avec l'adresse 
+4/ Choisir votre weather Météo France en Entity.
+Cela renseignera automatique les différents sensor, il vous faudra renseigner Vigilance Météo par le sensor vigilance de votre région.
+
+5/ Si besoin, mettre un titre.
+
+6/ Si besoin, vous pouvez renseigner "Icones location" avec l'adresse pointant en locale les icones animées d'origine (par example):
 ```yaml
 /local/community/lovelace-meteofrance-weather-card/icons/
 ```
-5/ Choisir votre weather Météo France en Entity.
-Cela renseignera automatique les différents sensor, il vous faudra renseigner Vigilance Météo par le sensor vigilance de votre région.
 
 ![reglages_graph](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/regl-carte-icone.png?raw=true)
