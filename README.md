@@ -1,4 +1,4 @@
-# Lovelace Météo France weather-card - Version à icones fixes
+# Lovelace Météo France weather-card - Icones fixes
 
 ![Weather Card](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/fixe-fdnoir.png?raw=true)
 
