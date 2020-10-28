@@ -1,6 +1,8 @@
 # Lovelace Météo France weather-card - Version à icones fixes
 
-Petites adaptations de la carte https://github.com/hacf-fr/lovelace-meteofrance-weather-card:
+![Weather Card](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/fixe-fdnoir.png?raw=true)
+
+Adaptations de la carte https://github.com/hacf-fr/lovelace-meteofrance-weather-card:
 
 - Remplacement des icônes (resortent mieux avec un thème sombre), possibilitée de remettre les icones d'origine.
 
@@ -12,7 +14,8 @@ Projet reprit de https://github.com/Imbuzi/meteo-france-weather-card, pour une a
 
 ![Weather Card](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/carte-icone-fdbl.png?raw=true)
 
-![Weather Card](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/fixe-fdnoir.png?raw=true)
+![Weather Card](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/anime-fdblc.png?raw=true)
+
 
 ## Installation:
 
