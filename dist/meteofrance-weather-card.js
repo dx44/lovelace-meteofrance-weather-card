@@ -603,9 +603,6 @@ class MeteofranceWeatherCard extends LitElement {
         display: block;
         text-align: center;
         color: var(--primary-text-color);
-        border-right: 0.1em solid #d9d9d9;
-        line-height: 2;
-        box-sizing: border-box;
       }
       .dayname {
         text-transform: uppercase;
