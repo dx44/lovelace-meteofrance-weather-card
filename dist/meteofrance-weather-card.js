@@ -409,6 +409,7 @@ class MeteofranceWeatherCard extends LitElement {
       ["Pluie faible", 0.4],
       ["Pluie modérée", 0.7],
       ["Pluie forte", 1],
+      ["Pas de valeur", 0],
     ]);
 
     let rainForecastList = [];
@@ -683,7 +684,7 @@ class MeteofranceWeatherCard extends LitElement {
       .rain-0min, .rain-5min, .rain-10min, .rain-15min, .rain-20min, .rain-25min {
         flex: 1 1 0;
       }
-      .rain-35min, .rain-45min, .rain-55min {
+      .rain-30min, .rain-40min, .rain-50min {
         flex: 2 1 0;
       }
       .oneHourLabel {
