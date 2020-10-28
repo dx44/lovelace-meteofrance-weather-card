@@ -12,7 +12,7 @@ Projet reprit de https://github.com/Imbuzi/meteo-france-weather-card, pour une a
 
 ![Weather Card](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/carte-icone-fdbl.png?raw=true)
 
-![Weather Card](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/carte-IconesFixe.png?raw=true)
+![Weather Card](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/fixe-fdnoir.png?raw=true)
 
 ## Installation:
 
