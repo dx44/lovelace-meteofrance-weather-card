@@ -1,6 +1,8 @@
-# Lovelace Météo France weather-card - Version à icones fixes
+# Lovelace Météo France weather-card - Icones X 2
 
-Petites adaptations de la carte https://github.com/hacf-fr/lovelace-meteofrance-weather-card:
+![Weather Card](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/fixe-fdnoir.png?raw=true)
+
+Adaptations de la carte https://github.com/hacf-fr/lovelace-meteofrance-weather-card:
 
 - Remplacement des icônes (resortent mieux avec un thème sombre), possibilitée de remettre les icones d'origine.
 
@@ -12,7 +14,8 @@ Projet reprit de https://github.com/Imbuzi/meteo-france-weather-card, pour une a
 
 ![Weather Card](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/carte-icone-fdbl.png?raw=true)
 
-![Weather Card](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/carte-IconesFixe.png?raw=true)
+![Weather Card](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/anime-fdblc-2.png?raw=true)
+
 
 ## Installation:
 
@@ -28,14 +31,11 @@ type: 'custom:meteofrance-weather-card'
 ```
 3/ "Afficher l'éditeur de code" (cela affichera l'éditeur visuel)
 
-4/ Choisir votre weather Météo France en Entity.
-Cela renseignera automatique les différents sensor, il vous faudra renseigner Vigilance Météo par le sensor vigilance de votre région.
-
-5/ Si besoin, mettre un titre.
-
-6/ Si besoin, vous pouvez renseigner "Icones location" avec l'adresse pointant en locale les icones animées d'origine (par example):
+4/ Si besoin, vous pouvez renseigner "Icones location" avec l'adresse pointant en locale les icones animées d'origine (par example):
 ```yaml
 /local/community/lovelace-meteofrance-weather-card/icons/
 ```
+5/ Choisir votre weather Météo France en Entity.
+Cela renseignera automatique les différents sensor, il vous faudra renseigner Vigilance Météo par le sensor vigilance de votre région.
 
 ![reglages_graph](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/regl-carte-icone.png?raw=true)
