@@ -1,5 +1,6 @@
 # Lovelace Météo France weather-card - Icones X 2
-Adaptations de la carte https://github.com/hacf-fr/lovelace-meteofrance-weather-card, proposer par [Home Assistant Communauté Francophone](https://hacf.fr).
+
+Adaptations de la carte https://github.com/hacf-fr/lovelace-meteofrance-weather-card, proposer par ![Home Assistant Communauté Francophone](https://hacf.fr/).
 
 ![Weather Card](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/fixe-fdnoir.png?raw=true)
 
@@ -44,4 +45,3 @@ La détection de la pluie sur 1h00 n'est valable que pour certaines régions:
 Les icônes fixe viennent de https://icon-icons.com/fr/pack/The-Weather-is-Nice-Today/1370, création de Laura Reen. J'ai parfois apporté de légère modifications.
 
 Les icônes animés sonr issus de https://www.amcharts.com/free-animated-svg-weather-icons/, avec modifications sur certain pour les compléter.
-
