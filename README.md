@@ -2,7 +2,7 @@
 
 ![Weather Card](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/fixe-fdnoir.png?raw=true)
 
-Adaptations de la carte https://github.com/hacf-fr/lovelace-meteofrance-weather-card:
+Adaptations de la carte https://github.com/hacf-fr/lovelace-meteofrance-weather-card, proposer par ![Home Assistant Communauté Francophone](https://hacf.fr/) :
 
 - Remplacement des icônes (resortent mieux avec un thème sombre), possibilitée de remettre les icones d'origine.
 
