@@ -6,13 +6,9 @@ Projet reprit de https://github.com/Imbuzi/meteo-france-weather-card, pour une a
 
 ## Prérequis
 
----
-
 Cette carte est prévue pour utiliser les entités de l'intégration [Météo France](https://www.home-assistant.io/integrations/meteo_france/).
 
 ## Installation via l'interface utilisateur
-
----
 
 ### Installation de la carte
 
