@@ -37,6 +37,10 @@ Cela renseignera automatique les différents sensor, il vous faudra renseigner V
 
 ![reglages_graph](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/regl-carte-icone.png?raw=true)
 
+N.B.:
+La détection de la pluie sur 1h00 n'est valable que pour certaine région:
+
+![Regions valide pour pluie sur 1h00](https://www.home-assistant.io/images/integrations/meteo_france/carte-couverture-du-service.png?raw=true)
 
 Les icônes fixe viennent de https://icon-icons.com/fr/pack/The-Weather-is-Nice-Today/1370, création de Laura Reen. J'ai parfois apporté de légère modifications.
 
