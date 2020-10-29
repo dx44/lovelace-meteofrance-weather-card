@@ -11,10 +11,10 @@
    id="Layer_1"
    viewBox="0 0 64 64"
    version="1.1"
-   sodipodi:docname="rainy-5.svg"
+   sodipodi:docname="fog.svg"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
   <metadata
-     id="metadata37">
+     id="metadata33">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -34,28 +34,28 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1340"
-     inkscape:window-height="934"
-     id="namedview35"
+     inkscape:window-width="1683"
+     inkscape:window-height="965"
+     id="namedview31"
      showgrid="false"
-     inkscape:zoom="8.0294623"
-     inkscape:cx="33.644924"
+     inkscape:zoom="6.4906101"
+     inkscape:cx="32"
      inkscape:cy="32"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-x="1907"
+     inkscape:window-y="652"
      inkscape:window-maximized="0"
      inkscape:current-layer="Layer_1"
      inkscape:document-rotation="0" />
   <defs
      id="defs14">
     <style
-       id="style2">.cls-1{fill:none;stroke:#0baeff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:3px;}.cls-2{fill:url(#linear-gradient);}.cls-3{fill:url(#linear-gradient-2);}</style>
+       id="style2">.cls-1{fill:url(#linear-gradient);}.cls-2{fill:url(#linear-gradient-2);}.cls-3,.cls-4{fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:3px;}.cls-3{stroke:#a5a9aa;}.cls-4{stroke:#b9c1c6;}</style>
     <linearGradient
-       gradientTransform="matrix(-0.76336104,0,0,0.76336104,-57.482642,5.7427267)"
+       gradientTransform="matrix(-0.76336104,0,0,0.76336104,-283.43751,5.7427267)"
        gradientUnits="userSpaceOnUse"
        id="linear-gradient"
-       x1="-101.28"
-       x2="-122.37"
+       x1="-397.28"
+       x2="-418.37"
        y1="46.39"
        y2="19.08">
       <stop
@@ -68,13 +68,13 @@
          id="stop6" />
     </linearGradient>
     <linearGradient
-       gradientTransform="matrix(0,-0.76336104,-0.76336104,0,52.229266,-55.46783)"
+       gradientTransform="matrix(0,-0.76336104,-0.76336104,0,15.587953,-322.84267)"
        gradientUnits="userSpaceOnUse"
        id="linear-gradient-2"
-       x1="-137.98"
-       x2="-126.37"
-       y1="85.19"
-       y2="102.84">
+       x1="-488.25"
+       x2="-476.64"
+       y1="37.19"
+       y2="54.83">
       <stop
          offset="0.02"
          stop-color="#fff"
@@ -86,59 +86,45 @@
          id="stop11" />
     </linearGradient>
   </defs>
-  <line
-     class="cls-1"
-     x1="29.945099"
-     x2="29.945099"
-     y1="44.292412"
-     y2="45.055771"
-     id="line18" />
-  <line
-     class="cls-1"
-     x1="25.364933"
-     x2="25.364933"
-     y1="42.76569"
-     y2="43.529049"
-     id="line20" />
-  <line
-     class="cls-1"
-     x1="34.525265"
-     x2="34.525265"
-     y1="42.76569"
-     y2="43.529049"
-     id="line22" />
-  <line
-     class="cls-1"
-     x1="34.525265"
-     x2="34.525265"
-     y1="47.345856"
-     y2="48.109215"
-     id="line24" />
-  <line
-     class="cls-1"
-     x1="25.364933"
-     x2="25.364933"
-     y1="47.345856"
-     y2="48.109215"
-     id="line26" />
-  <line
-     class="cls-1"
-     x1="29.945099"
-     x2="29.945099"
-     y1="48.872578"
-     y2="49.635937"
-     id="line28" />
   <path
-     class="cls-2"
+     class="cls-1"
      d="m 23.196986,13.300001 a 13.351185,13.351185 0 0 1 11.809196,7.114525 10.496214,10.496214 0 1 1 5.24429,19.55731 l -17.091654,0.0458 a 13.358818,13.358818 0 0 1 0,-26.717636 z"
-     id="path30"
+     id="path18"
      style="fill:url(#linear-gradient);stroke-width:0.763361" />
   <circle
-     class="cls-3"
+     class="cls-2"
      cx="-17.549551"
-     cy="46.738575"
+     cy="46.738571"
      r="10.496214"
      transform="rotate(-74.39)"
-     id="circle32"
+     id="circle20"
      style="fill:url(#linear-gradient-2);stroke-width:0.763361" />
+  <line
+     class="cls-3"
+     x1="36.021446"
+     x2="43.822994"
+     y1="43.529099"
+     y2="43.529099"
+     id="line22" />
+  <line
+     class="cls-4"
+     x1="19.303839"
+     x2="32.128304"
+     y1="43.529099"
+     y2="43.529099"
+     id="line24" />
+  <line
+     class="cls-3"
+     x1="32.50235"
+     x2="41.143597"
+     y1="47.345905"
+     y2="47.345905"
+     id="line26" />
+  <line
+     class="cls-3"
+     x1="22.372551"
+     x2="28.242798"
+     y1="47.345905"
+     y2="47.345905"
+     id="line28" />
 </svg>

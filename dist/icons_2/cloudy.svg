@@ -21,7 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -38,7 +38,7 @@
      inkscape:window-height="2066"
      id="namedview976"
      showgrid="false"
-     inkscape:zoom="28.589008"
+     inkscape:zoom="24.212206"
      inkscape:cx="32"
      inkscape:cy="32"
      inkscape:window-x="-11"
@@ -57,7 +57,7 @@
        x2="24.63"
        y1="55.39"
        y2="28.08"
-       gradientTransform="matrix(0.7641363,0,0,0.7641363,7.8724344,4.5728306)">
+       gradientTransform="matrix(0.7641363,0,0,0.7641363,5.8724344,4.5728306)">
       <stop
          offset="0"
          stop-color="#f2f2f2"
@@ -74,7 +74,7 @@
        x2="26.43"
        y1="33.86"
        y2="51.51"
-       gradientTransform="matrix(0.7641363,0,0,0.7641363,-2.4251027,9.2830392)">
+       gradientTransform="matrix(0.7641363,0,0,0.7641363,-4.3513339,8.7448634)">
       <stop
          offset="0.02"
          stop-color="#fff"
@@ -88,13 +88,13 @@
   </defs>
   <path
      class="cls-1"
-     d="m 39.431264,19.015007 a 13.364744,13.364744 0 0 0 -11.821189,7.12175 10.506875,10.506875 0 1 0 -5.287823,19.577172 l 17.109012,0.04585 a 13.372386,13.372386 0 0 0 0,-26.744771 z"
+     d="m 37.431264,19.015007 a 13.364744,13.364744 0 0 0 -11.821189,7.12175 10.506875,10.506875 0 1 0 -5.287823,19.577172 l 17.109012,0.04585 a 13.372386,13.372386 0 0 0 0,-26.744771 z"
      id="path971"
      style="fill:url(#linear-gradient);stroke-width:0.764137" />
   <circle
      class="cls-2"
-     cx="12.032355"
-     cy="39.917271"
+     cx="10.106124"
+     cy="39.379093"
      transform="rotate(-15.61)"
      id="circle973"
      style="fill:url(#linear-gradient-2);stroke-width:0.764137"

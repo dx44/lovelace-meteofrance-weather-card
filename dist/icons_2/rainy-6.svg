@@ -11,7 +11,7 @@
    id="Layer_1"
    viewBox="0 0 64 64"
    version="1.1"
-   sodipodi:docname="rainy-2.svg"
+   sodipodi:docname="rainy-6.svg"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
   <metadata
      id="metadata31">
@@ -21,7 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -38,19 +38,20 @@
      inkscape:window-height="1161"
      id="namedview29"
      showgrid="false"
-     inkscape:zoom="13.405885"
+     inkscape:zoom="11.410651"
      inkscape:cx="32"
      inkscape:cy="32"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="Layer_1" />
+     inkscape:current-layer="Layer_1"
+     inkscape:document-rotation="0" />
   <defs
      id="defs14">
     <style
        id="style2">.cls-1{fill:none;stroke:#0baeff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:3px;}.cls-2{fill:url(#linear-gradient);}.cls-3{fill:url(#linear-gradient-2);}</style>
     <linearGradient
-       gradientTransform="matrix(-0.76336104,0,0,0.76336104,-55.482642,5.7427276)"
+       gradientTransform="matrix(-0.76336104,0,0,0.76336104,-57.482642,5.7427276)"
        gradientUnits="userSpaceOnUse"
        id="linear-gradient"
        x1="-101.28"
@@ -67,7 +68,7 @@
          id="stop6" />
     </linearGradient>
     <linearGradient
-       gradientTransform="matrix(0,-0.76336104,-0.76336104,0,50.68348,-68.732491)"
+       gradientTransform="matrix(0,-0.76336104,-0.76336104,0,50.145304,-70.658722)"
        gradientUnits="userSpaceOnUse"
        id="linear-gradient-2"
        x1="-157.89"
@@ -87,34 +88,34 @@
   </defs>
   <line
      class="cls-1"
-     x1="31.945099"
-     x2="31.945099"
+     x1="29.945099"
+     x2="29.945099"
      y1="44.292461"
      y2="49.635986"
      id="line18" />
   <line
      class="cls-1"
-     x1="27.364933"
-     x2="27.364933"
+     x1="25.364933"
+     x2="25.364933"
      y1="42.765739"
      y2="48.109264"
      id="line20" />
   <line
      class="cls-1"
-     x1="36.525265"
-     x2="36.525265"
+     x1="34.525265"
+     x2="34.525265"
      y1="42.765739"
      y2="48.109264"
      id="line22" />
   <path
      class="cls-2"
-     d="m 25.196986,13.300002 a 13.351185,13.351185 0 0 1 11.809196,7.114525 10.496214,10.496214 0 1 1 5.24429,19.557309 l -17.091654,0.0458 a 13.358818,13.358818 0 0 1 0,-26.717636 z"
+     d="m 23.196986,13.300002 a 13.351185,13.351185 0 0 1 11.809196,7.114525 10.496214,10.496214 0 1 1 5.24429,19.557309 l -17.091654,0.0458 a 13.358818,13.358818 0 0 1 0,-26.717636 z"
      id="path24"
      style="fill:url(#linear-gradient);stroke-width:0.763361" />
   <circle
      class="cls-3"
-     cx="-17.011377"
-     cy="48.664803"
+     cx="-17.549553"
+     cy="46.738571"
      r="10.496214"
      transform="rotate(-74.39)"
      id="circle26"

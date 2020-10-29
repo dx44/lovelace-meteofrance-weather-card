@@ -21,7 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -38,13 +38,14 @@
      inkscape:window-height="1313"
      id="namedview27"
      showgrid="false"
-     inkscape:zoom="17.052286"
+     inkscape:zoom="18.462251"
      inkscape:cx="32"
      inkscape:cy="32"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="Layer_1" />
+     inkscape:current-layer="Layer_1"
+     inkscape:document-rotation="0" />
   <defs
      id="defs4">
     <style
@@ -52,64 +53,64 @@
   </defs>
   <circle
      class="cls-1"
-     cx="32.300003"
+     cx="30.300003"
      cy="33.000008"
      r="12.22807"
      id="circle8"
      style="stroke-width:0.719299" />
   <line
      class="cls-2"
-     x1="32.300003"
-     x2="32.300003"
+     x1="30.300003"
+     x2="30.300003"
      y1="13.578947"
      y2="17.894735"
      id="line10" />
   <line
      class="cls-2"
-     x1="32.300003"
-     x2="32.300003"
+     x1="30.300003"
+     x2="30.300003"
      y1="48.105255"
      y2="52.421043"
      id="line12" />
   <line
      class="cls-2"
-     x1="51.72105"
-     x2="47.405262"
+     x1="49.72105"
+     x2="45.405262"
      y1="33.000008"
      y2="33.000008"
      id="line14" />
   <line
      class="cls-2"
-     x1="17.194738"
-     x2="12.878947"
+     x1="15.194738"
+     x2="10.878947"
      y1="33.000008"
      y2="33.000008"
      id="line16" />
   <line
      class="cls-2"
-     x1="46.031403"
-     x2="42.981579"
+     x1="44.031403"
+     x2="40.981579"
      y1="19.268595"
      y2="22.31842"
      id="line18" />
   <line
      class="cls-2"
-     x1="21.618422"
-     x2="18.568598"
+     x1="19.618422"
+     x2="16.568598"
      y1="43.681572"
      y2="46.731396"
      id="line20" />
   <line
      class="cls-2"
-     x1="46.031403"
-     x2="42.981579"
+     x1="44.031403"
+     x2="40.981579"
      y1="46.731396"
      y2="43.681572"
      id="line22" />
   <line
      class="cls-2"
-     x1="21.618422"
-     x2="18.568598"
+     x1="19.618422"
+     x2="16.568598"
      y1="22.31842"
      y2="19.268595"
      id="line24" />
