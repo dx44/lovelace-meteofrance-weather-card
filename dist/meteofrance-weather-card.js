@@ -6,18 +6,18 @@ const weatherIconsDay = {
   clear: "day",
   "clear-night": "night",
   cloudy: "cloudy",
-  fog: "cloudy-day-1",
+  fog: "fog",
   hail: "rainy-7",
-  lightning: "thunder-1",
-  "lightning-rainy": "thunder-2",
+  lightning: "thunder",
+  "lightning-rainy": "lightning-rainy",
   partlycloudy: "cloudy-day-3",
   pouring: "rainy-6",
   rainy: "rainy-5",
   snowy: "snowy-6",
-  "snowy-rainy": "snowy-4",
+  "snowy-rainy": "snowy-rainy",
   sunny: "day",
-  windy: "cloudy-day-2",
-  "windy-variant": "cloudy-day-2",
+  windy: "windy",
+  "windy-variant": "windy",
   exceptional: "!!",
 };
 
@@ -51,11 +51,11 @@ const windDirections = [
 
 window.customCards = window.customCards || [];
 window.customCards.push({
-  type: "weather-card",
-  name: "Carte Météo France",
+  type: "meteofrance-weather-card",
+  name: "Carte Météo France par HACF",
   description: "Carte pour l'intégration Météo France.",
   preview: true,
-  documentationURL: "https://github.com/dx44/meteofrance-weather-card",
+  documentationURL: "https://github.com/hacf-fr/lovelace-meteofrance-weather-card",
 });
 
 const fireEvent = (node, type, detail, options) => {
@@ -603,6 +603,9 @@ class MeteofranceWeatherCard extends LitElement {
         display: block;
         text-align: center;
         color: var(--primary-text-color);
+        border-right: 0.1em solid #d9d9d9;
+        line-height: 2;
+        box-sizing: border-box;
       }
       .dayname {
         text-transform: uppercase;
