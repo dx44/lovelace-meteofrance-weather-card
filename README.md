@@ -39,4 +39,5 @@ Cela renseignera automatique les différents sensor, il vous faudra renseigner V
 
 
 Les icônes fixe viennent de https://icon-icons.com/fr/pack/The-Weather-is-Nice-Today/1370, création de Laura Reen. J'ai parfois apporté de légère modifications.
+
 Les icônes animés sonr issus de https://www.amcharts.com/free-animated-svg-weather-icons/, avec modifications sur certain pour les compléter.
