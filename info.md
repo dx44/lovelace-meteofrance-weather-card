@@ -1,5 +1,5 @@
 # Lovelace Météo France weather-card - Icones X 2
-Adaptations de la carte https://github.com/hacf-fr/lovelace-meteofrance-weather-card, proposer par `Home Assistant Communauté Francophone <https://hacf.fr//>`_ .
+Adaptations de la carte https://github.com/hacf-fr/lovelace-meteofrance-weather-card, proposer par [Home Assistant Communauté Francophone](https://hacf.fr).
 
 ![Weather Card](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/fixe-fdnoir.png?raw=true)
 
