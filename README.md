@@ -7,7 +7,7 @@ Adaptations de la carte https://github.com/hacf-fr/lovelace-meteofrance-weather-
 Projet reprit de https://github.com/Imbuzi/meteo-france-weather-card, pour une adaptation de la carte https://github.com/bramkragten/weather-card dédié à Météo France.
 
 - Remplacement des icônes (resortent mieux avec un thème sombre), possibilitée de remettre les icones d'origine.
-- Différentiation des icônes sur certains arguments (brouillard, Orage pluvieux,Pluie-neige, venteux), sur les deux jeux d'icônes.
+- Différentiation des icônes sur certains arguments (Brouillard, Orage pluvieux, Pluie-neige, venteux), sur les deux jeux d'icônes.
 
 ![Weather Card](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/carte-icone-fdbl.png?raw=true)
 
