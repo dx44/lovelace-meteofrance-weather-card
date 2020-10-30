@@ -12,7 +12,7 @@
    height="64"
    viewbox="0 0 64 64"
    id="svg40"
-   sodipodi:docname="pluie-neige.svg"
+   sodipodi:docname="snowy-rainy.svg"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
   <metadata
      id="metadata44">
@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -39,13 +39,14 @@
      inkscape:window-height="893"
      id="namedview42"
      showgrid="false"
-     inkscape:zoom="10.617461"
+     inkscape:zoom="7.1574907"
      inkscape:cx="32"
      inkscape:cy="32"
      inkscape:window-x="1074"
      inkscape:window-y="74"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg40" />
+     inkscape:current-layer="snowy-4"
+     inkscape:document-rotation="0" />
   <defs
      id="defs19">
     <filter
@@ -194,14 +195,14 @@
      filter="url(#blur)"
      id="snowy-4">
     <g
-       transform="translate(20,10)"
+       transform="matrix(1.2101111,0,0,1.2101111,13.4455,-0.98009986)"
        id="g37">
       <g
          id="g23">
         <path
-           d="M47.7,35.4c0-4.6-3.7-8.2-8.2-8.2c-1,0-1.9,0.2-2.8,0.5c-0.3-3.4-3.1-6.2-6.6-6.2c-3.7,0-6.7,3-6.7,6.7c0,0.8,0.2,1.6,0.4,2.3    c-0.3-0.1-0.7-0.1-1-0.1c-3.7,0-6.7,3-6.7,6.7c0,3.6,2.9,6.6,6.5,6.7l17.2,0C44.2,43.3,47.7,39.8,47.7,35.4z"
-           fill="#57A0EE"
-           stroke="white"
+           d="m 47.7,35.4 c 0,-4.6 -3.7,-8.2 -8.2,-8.2 -1,0 -1.9,0.2 -2.8,0.5 -0.3,-3.4 -3.1,-6.2 -6.6,-6.2 -3.7,0 -6.7,3 -6.7,6.7 0,0.8 0.2,1.6 0.4,2.3 -0.3,-0.1 -0.7,-0.1 -1,-0.1 -3.7,0 -6.7,3 -6.7,6.7 0,3.6 2.9,6.6 6.5,6.7 h 17.2 c 4.4,-0.5 7.9,-4 7.9,-8.4 z"
+           fill="#57a0ee"
+           stroke="#ffffff"
            stroke-linejoin="round"
            stroke-width="1.2"
            transform="translate(-20,-11)"
@@ -215,10 +216,10 @@
            id="g33">
           <line
              fill="none"
-             stroke="#57A0EE"
+             stroke="#57a0ee"
              stroke-linecap="round"
              stroke-width="1.2"
-             transform="translate(0,9), rotate(0)"
+             transform="translate(0,9)"
              x1="0"
              x2="0"
              y1="-2.5"
@@ -226,10 +227,10 @@
              id="line25" />
           <line
              fill="none"
-             stroke="#57A0EE"
+             stroke="#57a0ee"
              stroke-linecap="round"
              stroke-width="1"
-             transform="translate(0,9), rotate(45)"
+             transform="rotate(45,-10.863961,4.5)"
              x1="0"
              x2="0"
              y1="-2.5"
@@ -237,10 +238,10 @@
              id="line27" />
           <line
              fill="none"
-             stroke="#57A0EE"
+             stroke="#57a0ee"
              stroke-linecap="round"
              stroke-width="1"
-             transform="translate(0,9), rotate(90)"
+             transform="rotate(90,-4.5,4.5)"
              x1="0"
              x2="0"
              y1="-2.5"
@@ -248,10 +249,10 @@
              id="line29" />
           <line
              fill="none"
-             stroke="#57A0EE"
+             stroke="#57a0ee"
              stroke-linecap="round"
              stroke-width="1"
-             transform="translate(0,9), rotate(135)"
+             transform="rotate(135,-1.863961,4.5)"
              x1="0"
              x2="0"
              y1="-2.5"
@@ -265,24 +266,24 @@
      class="am-weather-rain-1"
      fill="none"
      stroke="#91c0f8"
-     stroke-dasharray="4, 4"
+     stroke-dasharray="4.84044, 4.84044"
      stroke-linecap="round"
-     stroke-width="2"
-     x1="23.285212"
-     x2="21.896025"
-     y1="46.159447"
-     y2="54.037907"
+     stroke-width="2.42022"
+     x1="17.420971"
+     x2="15.739901"
+     y1="42.776844"
+     y2="52.310658"
      id="line27-8" />
   <line
      class="am-weather-rain-1"
      fill="none"
      stroke="#91c0f8"
-     stroke-dasharray="4, 4"
+     stroke-dasharray="4.84044, 4.84044"
      stroke-linecap="round"
-     stroke-width="2"
-     x1="39.337322"
-     x2="37.948139"
-     y1="46.563824"
-     y2="54.442284"
+     stroke-width="2.42022"
+     x1="36.845806"
+     x2="35.164742"
+     y1="43.266186"
+     y2="52.799999"
      id="line31-1" />
 </svg>

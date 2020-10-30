@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -39,13 +39,14 @@
      inkscape:window-height="1278"
      id="namedview68"
      showgrid="false"
-     inkscape:zoom="12.56323"
+     inkscape:zoom="10.021254"
      inkscape:cx="32"
      inkscape:cy="32"
      inkscape:window-x="2254"
      inkscape:window-y="120"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg66" />
+     inkscape:current-layer="cloudy-day-2"
+     inkscape:document-rotation="0" />
   <defs
      id="defs19">
     <filter
@@ -200,7 +201,7 @@
      filter="url(#blur)"
      id="cloudy-day-2">
     <g
-       transform="translate(20,10)"
+       transform="matrix(1.0657299,0,0,1.0657299,21.854489,7.8028103)"
        id="g63">
       <g
          transform="translate(0,16)"
@@ -212,7 +213,7 @@
              id="g23">
             <line
                fill="none"
-               stroke="orange"
+               stroke="#ffa500"
                stroke-linecap="round"
                stroke-width="2"
                transform="translate(0,9)"
@@ -227,7 +228,7 @@
              id="g27">
             <line
                fill="none"
-               stroke="orange"
+               stroke="#ffa500"
                stroke-linecap="round"
                stroke-width="2"
                transform="translate(0,9)"
@@ -242,7 +243,7 @@
              id="g31">
             <line
                fill="none"
-               stroke="orange"
+               stroke="#ffa500"
                stroke-linecap="round"
                stroke-width="2"
                transform="translate(0,9)"
@@ -257,7 +258,7 @@
              id="g35">
             <line
                fill="none"
-               stroke="orange"
+               stroke="#ffa500"
                stroke-linecap="round"
                stroke-width="2"
                transform="translate(0,9)"
@@ -268,11 +269,11 @@
                id="line33" />
           </g>
           <g
-             transform="rotate(180)"
+             transform="scale(-1)"
              id="g39">
             <line
                fill="none"
-               stroke="orange"
+               stroke="#ffa500"
                stroke-linecap="round"
                stroke-width="2"
                transform="translate(0,9)"
@@ -283,11 +284,11 @@
                id="line37" />
           </g>
           <g
-             transform="rotate(225)"
+             transform="rotate(-135)"
              id="g43">
             <line
                fill="none"
-               stroke="orange"
+               stroke="#ffa500"
                stroke-linecap="round"
                stroke-width="2"
                transform="translate(0,9)"
@@ -298,11 +299,11 @@
                id="line41" />
           </g>
           <g
-             transform="rotate(270)"
+             transform="rotate(-90)"
              id="g47">
             <line
                fill="none"
-               stroke="orange"
+               stroke="#ffa500"
                stroke-linecap="round"
                stroke-width="2"
                transform="translate(0,9)"
@@ -313,11 +314,11 @@
                id="line45" />
           </g>
           <g
-             transform="rotate(315)"
+             transform="rotate(-45)"
              id="g51">
             <line
                fill="none"
-               stroke="orange"
+               stroke="#ffa500"
                stroke-linecap="round"
                stroke-width="2"
                transform="translate(0,9)"
@@ -331,9 +332,9 @@
         <circle
            cx="0"
            cy="0"
-           fill="orange"
+           fill="#ffa500"
            r="5"
-           stroke="orange"
+           stroke="#ffa500"
            stroke-width="2"
            id="circle55" />
       </g>
@@ -341,9 +342,9 @@
          class="am-weather-cloud-2"
          id="g61">
         <path
-           d="M47.7,35.4c0-4.6-3.7-8.2-8.2-8.2c-1,0-1.9,0.2-2.8,0.5c-0.3-3.4-3.1-6.2-6.6-6.2c-3.7,0-6.7,3-6.7,6.7c0,0.8,0.2,1.6,0.4,2.3    c-0.3-0.1-0.7-0.1-1-0.1c-3.7,0-6.7,3-6.7,6.7c0,3.6,2.9,6.6,6.5,6.7l17.2,0C44.2,43.3,47.7,39.8,47.7,35.4z"
-           fill="#91C0F8"
-           stroke="white"
+           d="m 47.7,35.4 c 0,-4.6 -3.7,-8.2 -8.2,-8.2 -1,0 -1.9,0.2 -2.8,0.5 -0.3,-3.4 -3.1,-6.2 -6.6,-6.2 -3.7,0 -6.7,3 -6.7,6.7 0,0.8 0.2,1.6 0.4,2.3 -0.3,-0.1 -0.7,-0.1 -1,-0.1 -3.7,0 -6.7,3 -6.7,6.7 0,3.6 2.9,6.6 6.5,6.7 h 17.2 c 4.4,-0.5 7.9,-4 7.9,-8.4 z"
+           fill="#91c0f8"
+           stroke="#ffffff"
            stroke-linejoin="round"
            stroke-width="1.2"
            transform="translate(-20,-11)"
@@ -353,12 +354,12 @@
   </g>
   <path
      class="cls-5"
-     d="M 37.757373,39.541474 A 1.8535262,1.8535262 0 0 1 39.588657,41.395 v 0 a 1.8535262,1.8535262 0 0 1 -1.853526,1.853526 H 22.16551 a 2.2242315,2.2242315 0 0 0 -2.224231,2.224232 v 0 a 2.2242315,2.2242315 0 0 0 2.224231,2.224231 h 14.642858 a 1.482821,1.482821 0 0 1 1.482821,1.482821 v 0.05931 a 1.482821,1.482821 0 0 1 -1.482821,1.482821 h -1.297469"
+     d="m 40.779054,39.286044 a 1.9753584,1.9753584 0 0 1 1.951653,1.975358 v 0 A 1.9753584,1.9753584 0 0 1 40.75535,43.236761 H 24.162338 a 2.3704301,2.3704301 0 0 0 -2.37043,2.370431 v 0 a 2.3704301,2.3704301 0 0 0 2.37043,2.370428 H 39.76767 a 1.5802867,1.5802867 0 0 1 1.580288,1.580287 v 0.06321 a 1.5802867,1.5802867 0 0 1 -1.580288,1.580287 h -1.382752"
      id="path40"
-     style="fill:none;stroke:#a5a9aa;stroke-width:3px;stroke-linecap:round;stroke-miterlimit:10" />
+     style="fill:none;stroke:#a5a9aa;stroke-width:3.19719px;stroke-linecap:round;stroke-miterlimit:10" />
   <path
      class="cls-6"
-     d="m 43.666415,49.17981 a 1.482821,1.482821 0 0 0 1.482821,-1.482821 v 0 a 1.482821,1.482821 0 0 0 -1.482821,-1.482821 h -2.965642"
+     d="m 47.076496,49.557907 a 1.5802867,1.5802867 0 0 0 1.580288,-1.580287 v 0 a 1.5802867,1.5802867 0 0 0 -1.580288,-1.580285 h -3.160573"
      id="path42"
-     style="fill:none;stroke:#b9c1c6;stroke-width:3px;stroke-linecap:round;stroke-miterlimit:10" />
+     style="fill:none;stroke:#b9c1c6;stroke-width:3.19719px;stroke-linecap:round;stroke-miterlimit:10" />
 </svg>
