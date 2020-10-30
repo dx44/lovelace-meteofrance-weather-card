@@ -6,12 +6,18 @@ Adaptations de la carte https://github.com/hacf-fr/lovelace-meteofrance-weather-
 
 Projet reprit de https://github.com/Imbuzi/meteo-france-weather-card, pour une adaptation de la carte https://github.com/bramkragten/weather-card dédié à Météo France.
 
-- Remplacement des icônes (resortent mieux avec un thème sombre), possibilitée de remettre les icones d'origine.
-- Différentiation des icônes sur certains arguments (Brouillard, Orage pluvieux, Pluie-neige, venteux), sur les deux jeux d'icônes.
+- Ajout de nouveaux jeux d'icônes (resortent mieux avec un thème sombre), possibilitée de remettre les icones d'origine (complété).
+- Différentiation des icônes sur certains arguments (Brouillard, Orage pluvieux, Pluie-neige, venteux), sur tout les jeux d'icônes.
 
+Icônes animées bleus: ```yaml /local/community/lovelace-meteofrance-weather-card/icons/ ```:
+![Icons_1](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/anime-fdblc-2.png?raw=true)
+
+Icônes fixe: ```yaml /local/community/lovelace-meteofrance-weather-card/icons_1/ ```:
 ![Weather Card](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/carte-icone-fdbl.png?raw=true)
 
-![Weather Card](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/anime-fdblc-2.png?raw=true)
+Icônes animées blancs: ```yaml /local/community/lovelace-meteofrance-weather-card/icons_2/ ```:
+![Icons](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/anime-fdblc-3.png?raw=true)
+
 
 
 ## Installation:
