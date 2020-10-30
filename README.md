@@ -41,6 +41,19 @@ Cela renseignera automatique les différents sensor, il vous faudra renseigner V
 
 ![reglages_graph](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/regl-carte-icone.png?raw=true)
 
+```yaml
+ype: 'custom:meteofrance-weather-card'
+entity: weather.capbreton
+number_of_forecasts: '8'
+cloudCoverEntity: sensor.capbreton_cloud_cover
+rainChanceEntity: sensor.capbreton_rain_chance
+freezeChanceEntity: sensor.capbreton_freeze_chance
+snowChanceEntity: sensor.capbreton_snow_chance
+uvEntity: sensor.capbreton_uv
+rainForecastEntity: sensor.capbreton_next_rain
+alertEntity: sensor.40_weather_alert
+icons: /local/community/lovelace-meteofrance-weather-card/icons_3/
+```
 N.B.:
 La détection de la pluie sur 1h00 n'est valable que pour certaines régions:
 
