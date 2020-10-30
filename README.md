@@ -42,7 +42,7 @@ Cela renseignera automatique les différents sensor, il vous faudra renseigner V
 ![reglages_graph](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/regl-carte-icone.png?raw=true)
 
 ```yaml
-ype: 'custom:meteofrance-weather-card'
+type: 'custom:meteofrance-weather-card'
 entity: weather.capbreton
 number_of_forecasts: '8'
 cloudCoverEntity: sensor.capbreton_cloud_cover
