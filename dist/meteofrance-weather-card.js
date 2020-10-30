@@ -576,7 +576,7 @@ class MeteofranceWeatherCard extends LitElement {
       .variations ha-icon {
         height: 22px;
         margin-right: 5px;
-        color: var(--paper-item-icon-color);
+        color: var(--primary-color);
       }
       .variations li {
         flex-basis: auto;
