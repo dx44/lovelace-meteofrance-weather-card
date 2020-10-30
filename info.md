@@ -1,4 +1,4 @@
-# Lovelace Météo France weather-card - Icones X 2
+# Lovelace Météo France weather-card - Icones X 3
 
 Adaptations de la carte https://github.com/hacf-fr/lovelace-meteofrance-weather-card, proposer par ![Home Assistant Communauté Francophone](https://hacf.fr/).
 
@@ -6,13 +6,17 @@ Adaptations de la carte https://github.com/hacf-fr/lovelace-meteofrance-weather-
 
 Projet reprit de https://github.com/Imbuzi/meteo-france-weather-card, pour une adaptation de la carte https://github.com/bramkragten/weather-card dédié à Météo France.
 
-- Remplacement des icônes (resortent mieux avec un thème sombre), possibilitée de remettre les icones d'origine.
-- Différentiation des icônes sur certains arguments (Brouillard, Orage pluvieux, Pluie-neige, venteux), sur les deux jeux d'icônes.
+- Ajout de nouveaux jeux d'icônes (resortent mieux avec un thème sombre), possibilitée de remettre les icones d'origine (complété).
+- Différentiation des icônes sur certains arguments (Brouillard, Orage pluvieux, Pluie-neige, venteux), sur tout les jeux d'icônes.
 
+Icônes animées bleus: ```yaml /local/community/lovelace-meteofrance-weather-card/icons/ ```:
+![Icons_1](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/anime-fdblc-2.png?raw=true)
+
+Icônes fixe (par défaut): ```yaml /local/community/lovelace-meteofrance-weather-card/icons_1/ ```:
 ![Weather Card](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/carte-icone-fdbl.png?raw=true)
 
-![Weather Card](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/anime-fdblc-2.png?raw=true)
-
+Icônes animées blancs: ```yaml /local/community/lovelace-meteofrance-weather-card/icons_2/ ```:
+![Icons](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/anime-fdblc-3.png?raw=true)
 
 ## Installation:
 
@@ -37,6 +41,19 @@ Cela renseignera automatique les différents sensor, il vous faudra renseigner V
 
 ![reglages_graph](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/regl-carte-icone.png?raw=true)
 
+```yaml
+type: 'custom:meteofrance-weather-card'
+entity: weather.capbreton
+number_of_forecasts: '8'
+cloudCoverEntity: sensor.capbreton_cloud_cover
+rainChanceEntity: sensor.capbreton_rain_chance
+freezeChanceEntity: sensor.capbreton_freeze_chance
+snowChanceEntity: sensor.capbreton_snow_chance
+uvEntity: sensor.capbreton_uv
+rainForecastEntity: sensor.capbreton_next_rain
+alertEntity: sensor.40_weather_alert
+icons: /local/community/lovelace-meteofrance-weather-card/icons_3/
+```
 N.B.:
 La détection de la pluie sur 1h00 n'est valable que pour certaines régions:
 
