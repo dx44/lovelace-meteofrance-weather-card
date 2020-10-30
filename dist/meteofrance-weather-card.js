@@ -669,7 +669,7 @@ class MeteofranceWeatherCard extends LitElement {
       }
       .oneHour li {
         width: 100%;
-        background-color: var(--paper-item-icon-color);
+        background-color: rgb(29,136,253);
         border-right: 1px solid var(--lovelace-background, var(--primary-background-color));
       }
       .oneHour li:first-child {
