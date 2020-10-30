@@ -1,4 +1,4 @@
-# Lovelace Météo France weather-card - Icones X 2
+# Lovelace Météo France weather-card - Icones X 3
 
 Adaptations de la carte https://github.com/hacf-fr/lovelace-meteofrance-weather-card, proposer par ![Home Assistant Communauté Francophone](https://hacf.fr/).
 
