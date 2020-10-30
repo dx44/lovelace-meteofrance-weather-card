@@ -12,13 +12,11 @@ Projet reprit de https://github.com/Imbuzi/meteo-france-weather-card, pour une a
 Icônes animées bleus: ```yaml /local/community/lovelace-meteofrance-weather-card/icons/ ```:
 ![Icons_1](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/anime-fdblc-2.png?raw=true)
 
-Icônes fixe: ```yaml /local/community/lovelace-meteofrance-weather-card/icons_1/ ```:
+Icônes fixe (par défaut): ```yaml /local/community/lovelace-meteofrance-weather-card/icons_1/ ```:
 ![Weather Card](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/carte-icone-fdbl.png?raw=true)
 
 Icônes animées blancs: ```yaml /local/community/lovelace-meteofrance-weather-card/icons_2/ ```:
 ![Icons](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/anime-fdblc-3.png?raw=true)
-
-
 
 ## Installation:
 
