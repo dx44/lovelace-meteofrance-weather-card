@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -39,13 +39,14 @@
      inkscape:window-height="987"
      id="namedview32"
      showgrid="false"
-     inkscape:zoom="10.347336"
+     inkscape:zoom="7.92155"
      inkscape:cx="20"
      inkscape:cy="33.329977"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="rainy-5" />
+     inkscape:current-layer="rainy-5"
+     inkscape:document-rotation="0" />
   <defs
      id="defs15">
     <filter
@@ -167,7 +168,7 @@
      filter="url(#blur)"
      id="rainy-5">
     <g
-       transform="matrix(1.2544498,0,0,1.2544498,12.892354,-2.1717229)"
+       transform="matrix(1.2544498,0,0,1.2544498,15.892354,-2.1717229)"
        id="g21">
       <g
          class="am-weather-cloud-2 am-weather-easing-ease-in-out"
@@ -180,7 +181,7 @@
       </g>
     </g>
     <g
-       transform="matrix(1.2353919,0.21783293,-0.21783293,1.2353919,30.454653,42.98847)"
+       transform="matrix(1.2353919,0.21783293,-0.21783293,1.2353919,33.454653,42.98847)"
        id="g27">
       <line
          class="am-weather-rain-1"

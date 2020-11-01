@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -39,13 +39,14 @@
      inkscape:window-height="870"
      id="namedview34"
      showgrid="false"
-     inkscape:zoom="7.9927605"
+     inkscape:zoom="5.2092894"
      inkscape:cx="23.5"
      inkscape:cy="23.5"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="thunder" />
+     inkscape:current-layer="thunder"
+     inkscape:document-rotation="0" />
   <defs
      id="defs15">
     <filter
@@ -194,7 +195,7 @@
      filter="url(#blur)"
      id="thunder">
     <g
-       transform="matrix(1.2120253,0,0,1.0823408,12.726899,3.5318485)"
+       transform="matrix(1.2120253,0,0,1.0823408,16.726899,3.5318485)"
        id="g29">
       <g
          class="am-weather-cloud-1"
@@ -219,7 +220,7 @@
         <polygon
            class="am-weather-stroke"
            fill="#fddb4e"
-           points="11.1,6.9 14.3,-2.9 20.5,-2.9 16.4,4.3 20.3,4.3 11.5,14.6 14.9,6.9 "
+           points="16.4,4.3 20.3,4.3 11.5,14.6 14.9,6.9 11.1,6.9 14.3,-2.9 20.5,-2.9 "
            id="polygon25" />
       </g>
     </g>

@@ -8,8 +8,8 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="63.599998"
-   height="63.599998"
+   width="63.799999"
+   height="63.799999"
    viewbox="0 0 17 17"
    id="svg62"
    sodipodi:docname="cloudy-day-3.svg"
@@ -35,13 +35,13 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1558"
-     inkscape:window-height="1028"
+     inkscape:window-width="2147"
+     inkscape:window-height="1314"
      id="namedview64"
      showgrid="false"
-     inkscape:zoom="7.8561378"
-     inkscape:cx="24.47"
-     inkscape:cy="21.68"
+     inkscape:zoom="12.138759"
+     inkscape:cx="22.5"
+     inkscape:cy="22.5"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -266,10 +266,9 @@
   </defs>
   <g
      filter="url(#blur)"
-     id="cloudy-day-3"
-     transform="translate(1.97,-0.81999993)">
+     id="cloudy-day-3">
     <g
-       transform="matrix(1.1056511,0,0,1.1056511,20.403464,14.12)"
+       transform="matrix(1.2743902,0,0,1.2743902,22.567073,11)"
        id="g59">
       <g
          transform="translate(0,13)"

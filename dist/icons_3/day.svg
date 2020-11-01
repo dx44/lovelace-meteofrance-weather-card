@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -39,13 +39,14 @@
      inkscape:window-height="967"
      id="namedview58"
      showgrid="false"
-     inkscape:zoom="10.235372"
+     inkscape:zoom="7.6367026"
      inkscape:cx="20.592134"
      inkscape:cy="29.330114"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="day" />
+     inkscape:current-layer="day"
+     inkscape:document-rotation="0" />
   <defs
      id="defs15">
     <filter
@@ -188,7 +189,7 @@
      id="day"
      transform="translate(-2.5999999,-0.5999999)">
     <g
-       transform="matrix(1.6076923,0,0,1.6076923,31.5,33.2)"
+       transform="matrix(1.6076923,0,0,1.6076923,33.5,33.2)"
        id="g53">
       <g
          class="am-weather-sun am-weather-sun-shiny am-weather-easing-ease-in-out"
