@@ -38,13 +38,14 @@
      inkscape:window-height="1102"
      id="namedview38"
      showgrid="false"
-     inkscape:zoom="13.819553"
+     inkscape:zoom="12.125717"
      inkscape:cx="32"
      inkscape:cy="32"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="night" />
+     inkscape:current-layer="night"
+     inkscape:document-rotation="0" />
   <defs
      id="defs19">
     <filter
@@ -550,14 +551,14 @@
      filter="url(#blur)"
      id="night">
     <g
-       transform="matrix(1.8414097,0,0,1.8414097,5.2378855,8.2378855)"
+       transform="matrix(1.8414097,0,0,1.8414097,7.2378855,8.2378855)"
        id="g33">
       <g
          class="am-weather-moon-star-1"
          id="g23">
         <polygon
            fill="#ffa500"
-           points="4,4 3.3,5.2 2.7,4 1.5,3.3 2.7,2.7 3.3,1.5 4,2.7 5.2,3.3 "
+           points="3.3,5.2 2.7,4 1.5,3.3 2.7,2.7 3.3,1.5 4,2.7 5.2,3.3 4,4 "
            stroke="none"
            stroke-miterlimit="10"
            id="polygon21" />
@@ -567,7 +568,7 @@
          id="g27">
         <polygon
            fill="#ffa500"
-           points="4,4 3.3,5.2 2.7,4 1.5,3.3 2.7,2.7 3.3,1.5 4,2.7 5.2,3.3 "
+           points="3.3,5.2 2.7,4 1.5,3.3 2.7,2.7 3.3,1.5 4,2.7 5.2,3.3 4,4 "
            stroke="none"
            stroke-miterlimit="10"
            transform="translate(20,10)"

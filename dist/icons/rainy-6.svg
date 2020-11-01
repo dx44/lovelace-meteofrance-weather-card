@@ -38,13 +38,14 @@
      inkscape:window-height="1134"
      id="namedview38"
      showgrid="false"
-     inkscape:zoom="14.309825"
+     inkscape:zoom="13.001339"
      inkscape:cx="32"
      inkscape:cy="32"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="rainy-6" />
+     inkscape:current-layer="rainy-6"
+     inkscape:document-rotation="0" />
   <defs
      id="defs19">
     <filter
@@ -139,7 +140,7 @@
      filter="url(#blur)"
      id="rainy-6">
     <g
-       transform="matrix(1.2055471,0,0,1.2055471,13.424962,-0.93491626)"
+       transform="matrix(1.2055471,0,0,1.2055471,16.424962,-0.93491626)"
        id="g25">
       <g
          id="g23">
@@ -154,7 +155,7 @@
       </g>
     </g>
     <g
-       transform="matrix(1.1872321,0.20934105,-0.20934105,1.1872321,26.68598,42.464779)"
+       transform="matrix(1.1872321,0.20934105,-0.20934105,1.1872321,29.68598,42.464779)"
        id="g33">
       <line
          class="am-weather-rain-1"

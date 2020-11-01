@@ -38,13 +38,14 @@
      inkscape:window-height="1086"
      id="namedview66"
      showgrid="false"
-     inkscape:zoom="13.574416"
+     inkscape:zoom="10.083293"
      inkscape:cx="32"
      inkscape:cy="32"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-x="1843"
+     inkscape:window-y="250"
      inkscape:window-maximized="0"
-     inkscape:current-layer="snowy-6" />
+     inkscape:current-layer="snowy-6"
+     inkscape:document-rotation="0" />
   <defs
      id="defs19">
     <filter
@@ -254,7 +255,7 @@
      filter="url(#blur)"
      id="snowy-6">
     <g
-       transform="matrix(1.384106,0,0,1.384106,14.228477,-2.7026494)"
+       transform="matrix(1.2195122,0,0,1.2195122,16.487805,-1.0731708)"
        id="g61">
       <g
          class="am-weather-cloud-2"

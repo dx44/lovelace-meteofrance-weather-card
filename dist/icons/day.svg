@@ -38,13 +38,14 @@
      inkscape:window-height="830"
      id="namedview62"
      showgrid="false"
-     inkscape:zoom="9.6522374"
+     inkscape:zoom="5.9152817"
      inkscape:cx="32"
      inkscape:cy="32"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="day" />
+     inkscape:current-layer="day"
+     inkscape:document-rotation="0" />
   <defs
      id="defs19">
     <filter
@@ -550,7 +551,7 @@
      filter="url(#blur)"
      id="day">
     <g
-       transform="matrix(1.6076923,0,0,1.6076923,28.9,31.9)"
+       transform="matrix(1.6076923,0,0,1.6076923,31.9,31.9)"
        id="g57">
       <g
          class="am-weather-sun am-weather-sun-shiny am-weather-easing-ease-in-out"

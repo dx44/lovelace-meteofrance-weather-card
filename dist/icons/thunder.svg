@@ -38,13 +38,14 @@
      inkscape:window-height="1167"
      id="namedview38"
      showgrid="false"
-     inkscape:zoom="14.815418"
+     inkscape:zoom="13.936293"
      inkscape:cx="32"
      inkscape:cy="32"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="thunder" />
+     inkscape:current-layer="thunder"
+     inkscape:document-rotation="0" />
   <defs
      id="defs19">
     <filter
@@ -315,7 +316,7 @@
      filter="url(#blur)"
      id="thunder">
     <g
-       transform="matrix(1.061729,0,0,1.061729,12.777781,4.0562924)"
+       transform="matrix(1.061729,0,0,1.061729,16.777781,4.0562924)"
        id="g33">
       <g
          class="am-weather-cloud-1"
@@ -348,7 +349,7 @@
            fill="#ffa500"
            stroke="#ffffff"
            stroke-width="1"
-           points="20.3,4.3 11.5,14.6 14.9,6.9 11.1,6.9 14.3,-2.9 20.5,-2.9 16.4,4.3 "
+           points="14.9,6.9 11.1,6.9 14.3,-2.9 20.5,-2.9 16.4,4.3 20.3,4.3 11.5,14.6 "
            id="polygon29" />
       </g>
     </g>

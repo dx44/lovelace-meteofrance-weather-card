@@ -39,7 +39,7 @@
      inkscape:window-height="893"
      id="namedview42"
      showgrid="false"
-     inkscape:zoom="7.1574907"
+     inkscape:zoom="4.8250399"
      inkscape:cx="32"
      inkscape:cy="32"
      inkscape:window-x="1074"
@@ -195,7 +195,7 @@
      filter="url(#blur)"
      id="snowy-4">
     <g
-       transform="matrix(1.2101111,0,0,1.2101111,13.4455,-0.98009986)"
+       transform="matrix(1.2101111,0,0,1.2101111,16.4455,-0.98009986)"
        id="g37">
       <g
          id="g23">
@@ -269,8 +269,8 @@
      stroke-dasharray="4.84044, 4.84044"
      stroke-linecap="round"
      stroke-width="2.42022"
-     x1="17.420971"
-     x2="15.739901"
+     x1="20.420971"
+     x2="18.739901"
      y1="42.776844"
      y2="52.310658"
      id="line27-8" />
@@ -281,8 +281,8 @@
      stroke-dasharray="4.84044, 4.84044"
      stroke-linecap="round"
      stroke-width="2.42022"
-     x1="36.845806"
-     x2="35.164742"
+     x1="39.845806"
+     x2="38.164742"
      y1="43.266186"
      y2="52.799999"
      id="line31-1" />
