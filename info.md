@@ -18,6 +18,9 @@ Icônes fixe (par défaut): ```yaml /local/community/lovelace-meteofrance-weathe
 Icônes animées blancs: ```yaml /local/community/lovelace-meteofrance-weather-card/icons_2/ ```:
 ![Icons](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/anime-fdblc-3.png?raw=true)
 
+Prévision par heures + pluie + alertes (pour compléter une autre intégration):
+![Icons](https://github.com/Axellum/lovelace-meteofrance-weather-card/blob/Meteo-France/h_prev.png?raw=true)
+
 ## Installation:
 
 Ajoutez l'adresse https://github.com/Axellum/lovelace-meteofrance-weather-card dans "Custom repositories" sur HACS, "Category": "Lovelace".
