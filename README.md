@@ -67,3 +67,28 @@ Les icônes fixe viennent de https://icon-icons.com/fr/pack/The-Weather-is-Nice-
 Les icônes animés bleus sont issus de https://www.amcharts.com/free-animated-svg-weather-icons/, avec modifications sur certain pour les compléter.
 
 Les icônes animés blancs arrivent de https://github.com/fineemb/lovelace-colorfulclouds-weather-card, avec modifications de positionnement.
+
+### Icones animés bleus:
+![](/dist/icons/day.svg)
+![](/dist/icons/animated/night.svg)
+
+![](/dist/icons/windy-night.svg)
+![](/dist/icons/windy.svg)
+![](/dist/icons/fog.svg)
+![](/dist/icons/fog1.svg)
+
+
+![](/dist/icons/cloudy.svg)
+![](/dist/icons/cloudy-day-3.svg)
+
+![](/dist/icons/cloudy-night-3.svg)
+![](/dist/icons/lightning-rainy.svg)
+![](/dist/icons/rainy-5.svg)
+![](/dist/icons/rainy-6.svg)
+
+
+![](/dist/icons/rainy-7.svg)
+![](/dist/icons/snowy-6.svg)
+![](/dist/icons/snowy-rainy.svg)
+![](/dist/icons/thunder.svg)
+
