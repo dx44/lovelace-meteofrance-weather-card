@@ -39,11 +39,11 @@
      inkscape:window-height="1026"
      id="namedview34"
      showgrid="false"
-     inkscape:zoom="8.014227"
+     inkscape:zoom="6.439447"
      inkscape:cx="16.5"
      inkscape:cy="34.220522"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-x="1927"
+     inkscape:window-y="614"
      inkscape:window-maximized="0"
      inkscape:current-layer="night"
      inkscape:document-rotation="0" />
@@ -219,13 +219,13 @@
      id="night">
     <g
        id="g29"
-       transform="matrix(1.8414097,0,0,1.8414097,6.2378855,7.5378854)">
+       transform="matrix(1.7637131,0,0,1.7637131,7.733259,8.3544304)">
       <g
          class="am-weather-star-2"
          id="g19">
         <polygon
            fill="#f9e491"
-           points="3.3,1.5 4,2.7 5.2,3.3 4,4 3.3,5.2 2.7,4 1.5,3.3 2.7,2.7 "
+           points="3.3,5.2 2.7,4 1.5,3.3 2.7,2.7 3.3,1.5 4,2.7 5.2,3.3 4,4 "
            stroke="none"
            stroke-miterlimit="10"
            id="polygon17" />
@@ -235,7 +235,7 @@
          id="g23">
         <polygon
            fill="#f9e491"
-           points="3.3,1.5 4,2.7 5.2,3.3 4,4 3.3,5.2 2.7,4 1.5,3.3 2.7,2.7 "
+           points="3.3,5.2 2.7,4 1.5,3.3 2.7,2.7 3.3,1.5 4,2.7 5.2,3.3 4,4 "
            stroke="none"
            stroke-miterlimit="10"
            transform="translate(20,10)"
