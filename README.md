@@ -92,3 +92,23 @@ Les icônes animés blancs arrivent de https://github.com/fineemb/lovelace-color
 ![](/dist/icons/snowy-rainy.svg)
 ![](/dist/icons/thunder.svg)
 
+
+### Icones animés blancs:
+![](/dist/icons_3/day.svg)
+![](/dist/icons_3/animated/night.svg)
+![](/dist/icons_3/windy-night.svg)
+![](/dist/icons_3/windy.svg)
+
+![](/dist/icons_3/fog.svg)
+![](/dist/icons_3/cloudy.svg)
+![](/dist/icons_3/cloudy-day-3.svg)
+![](/dist/icons_3/cloudy-night-3.svg)
+
+![](/dist/icons_3/lightning-rainy.svg)
+![](/dist/icons_3/rainy-5.svg)
+![](/dist/icons_3/rainy-6.svg)
+![](/dist/icons_3/rainy-7.svg)
+
+![](/dist/icons_3/snowy-6.svg)
+![](/dist/icons_3/snowy-rainy.svg)
+![](/dist/icons_3/thunder.svg)
