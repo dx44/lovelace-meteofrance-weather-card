@@ -70,7 +70,7 @@ Les icônes animés blancs arrivent de https://github.com/fineemb/lovelace-color
 
 ### Icones animés bleus:
 ![](/dist/icons/day.svg)
-![](/dist/icons/animated/night.svg)
+![](/dist/icons/night.svg)
 
 ![](/dist/icons/windy-night.svg)
 ![](/dist/icons/windy.svg)
@@ -95,7 +95,7 @@ Les icônes animés blancs arrivent de https://github.com/fineemb/lovelace-color
 
 ### Icones animés blancs:
 ![](/dist/icons_3/day.svg)
-![](/dist/icons_3/animated/night.svg)
+![](/dist/icons_3/night.svg)
 ![](/dist/icons_3/windy-night.svg)
 ![](/dist/icons_3/windy.svg)
 
