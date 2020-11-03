@@ -11,18 +11,17 @@
    width="64"
    height="64"
    viewbox="0 0 64 64"
-   id="svg42"
-   sodipodi:docname="windy-night-modif.svg"
+   id="svg32"
+   sodipodi:docname="fog.svg"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
   <metadata
-     id="metadata46">
+     id="metadata36">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -35,17 +34,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1671"
-     inkscape:window-height="1295"
-     id="namedview44"
+     inkscape:window-width="1709"
+     inkscape:window-height="1157"
+     id="namedview34"
      showgrid="false"
-     inkscape:zoom="13.4988"
+     inkscape:zoom="12.706824"
      inkscape:cx="32"
-     inkscape:cy="34.384286"
-     inkscape:window-x="171"
-     inkscape:window-y="124"
+     inkscape:cy="31.693089"
+     inkscape:window-x="1527"
+     inkscape:window-y="282"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg42"
+     inkscape:current-layer="cloudy"
      inkscape:document-rotation="0" />
   <defs
      id="defs19">
@@ -84,194 +83,6 @@
 /*
 ** CLOUDS
 */
-@keyframes am-weather-cloud-2 {
-  0% {
-    -webkit-transform: translate(0px,0px);
-       -moz-transform: translate(0px,0px);
-        -ms-transform: translate(0px,0px);
-            transform: translate(0px,0px);
-  }
-
-  50% {
-    -webkit-transform: translate(2px,0px);
-       -moz-transform: translate(2px,0px);
-        -ms-transform: translate(2px,0px);
-            transform: translate(2px,0px);
-  }
-
-  100% {
-    -webkit-transform: translate(0px,0px);
-       -moz-transform: translate(0px,0px);
-        -ms-transform: translate(0px,0px);
-            transform: translate(0px,0px);
-  }
-}
-
-.am-weather-cloud-2 {
-  -webkit-animation-name: am-weather-cloud-2;
-     -moz-animation-name: am-weather-cloud-2;
-          animation-name: am-weather-cloud-2;
-  -webkit-animation-duration: 3s;
-     -moz-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-timing-function: linear;
-     -moz-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-     -moz-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-/*
-** MOON
-*/
-@keyframes am-weather-moon {
-  0% {
-    -webkit-transform: rotate(0deg);
-       -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-
-  50% {
-    -webkit-transform: rotate(15deg);
-       -moz-transform: rotate(15deg);
-        -ms-transform: rotate(15deg);
-            transform: rotate(15deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(0deg);
-       -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-
-.am-weather-moon {
-  -webkit-animation-name: am-weather-moon;
-     -moz-animation-name: am-weather-moon;
-      -ms-animation-name: am-weather-moon;
-          animation-name: am-weather-moon;
-  -webkit-animation-duration: 6s;
-     -moz-animation-duration: 6s;
-      -ms-animation-duration: 6s;
-          animation-duration: 6s;
-  -webkit-animation-timing-function: linear;
-     -moz-animation-timing-function: linear;
-      -ms-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-     -moz-animation-iteration-count: infinite;
-      -ms-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-transform-origin: 12.5px 15.15px 0; /* TODO FF CENTER ISSUE */
-     -moz-transform-origin: 12.5px 15.15px 0; /* TODO FF CENTER ISSUE */
-      -ms-transform-origin: 12.5px 15.15px 0; /* TODO FF CENTER ISSUE */
-          transform-origin: 12.5px 15.15px 0; /* TODO FF CENTER ISSUE */
-}
-
-@keyframes am-weather-moon-star-1 {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.am-weather-moon-star-1 {
-  -webkit-animation-name: am-weather-moon-star-1;
-     -moz-animation-name: am-weather-moon-star-1;
-      -ms-animation-name: am-weather-moon-star-1;
-          animation-name: am-weather-moon-star-1;
-  -webkit-animation-delay: 3s;
-     -moz-animation-delay: 3s;
-      -ms-animation-delay: 3s;
-          animation-delay: 3s;
-  -webkit-animation-duration: 5s;
-     -moz-animation-duration: 5s;
-      -ms-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-timing-function: linear;
-     -moz-animation-timing-function: linear;
-      -ms-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: 1;
-     -moz-animation-iteration-count: 1;
-      -ms-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-}
-
-@keyframes am-weather-moon-star-2 {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.am-weather-moon-star-2 {
-  -webkit-animation-name: am-weather-moon-star-2;
-     -moz-animation-name: am-weather-moon-star-2;
-      -ms-animation-name: am-weather-moon-star-2;
-          animation-name: am-weather-moon-star-2;
-  -webkit-animation-delay: 5s;
-     -moz-animation-delay: 5s;
-      -ms-animation-delay: 5s;
-          animation-delay: 5s;
-  -webkit-animation-duration: 4s;
-     -moz-animation-duration: 4s;
-      -ms-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-timing-function: linear;
-     -moz-animation-timing-function: linear;
-      -ms-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: 1;
-     -moz-animation-iteration-count: 1;
-      -ms-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-}
-        ]]></style>
-    <filter
-       id="blur-5"
-       width="200%"
-       height="200%">
-      <feGaussianBlur
-         in="SourceAlpha"
-         stdDeviation="3"
-         id="feGaussianBlur28" />
-      <feOffset
-         dx="0"
-         dy="4"
-         result="offsetblur"
-         id="feOffset30" />
-      <feComponentTransfer
-         id="feComponentTransfer34">
-        <feFuncA
-           type="linear"
-           slope="0.05"
-           id="feFuncA32" />
-      </feComponentTransfer>
-      <feMerge
-         id="feMerge40">
-        <feMergeNode
-           id="feMergeNode36" />
-        <feMergeNode
-           in="SourceGraphic"
-           id="feMergeNode38" />
-      </feMerge>
-    </filter>
-    <style
-       type="text/css"
-       id="style43"><![CDATA[
-/*
-** CLOUDS
-*/
 @keyframes am-weather-cloud-1 {
   0% {
     -webkit-transform: translate(-5px,0px);
@@ -281,10 +92,10 @@
   }
 
   50% {
-    -webkit-transform: translate(6px,0px);
-       -moz-transform: translate(6px,0px);
-        -ms-transform: translate(6px,0px);
-            transform: translate(6px,0px);
+    -webkit-transform: translate(10px,0px);
+       -moz-transform: translate(10px,0px);
+        -ms-transform: translate(10px,0px);
+            transform: translate(10px,0px);
   }
 
   100% {
@@ -738,110 +549,90 @@
   </defs>
   <g
      filter="url(#blur)"
-     id="cloudy-night-2">
+     id="cloudy">
     <g
-       transform="matrix(1.1348201,0,0,1.1348201,13.10669,5.0989355)"
-       id="g39">
+       transform="matrix(1.1229311,0,0,1.1229311,13.05319,5.9018928)"
+       id="g29">
       <g
-         transform="matrix(0.8,0,0,0.8,16,4)"
-         id="g33">
-        <g
-           class="am-weather-moon-star-1"
-           id="g23">
-          <polygon
-             fill="#ffa500"
-             points="4,4 3.3,5.2 2.7,4 1.5,3.3 2.7,2.7 3.3,1.5 4,2.7 5.2,3.3 "
-             stroke="none"
-             stroke-miterlimit="10"
-             id="polygon21" />
-        </g>
-        <g
-           class="am-weather-moon-star-2"
-           id="g27">
-          <polygon
-             fill="#ffa500"
-             points="4,4 3.3,5.2 2.7,4 1.5,3.3 2.7,2.7 3.3,1.5 4,2.7 5.2,3.3 "
-             stroke="none"
-             stroke-miterlimit="10"
-             transform="translate(20,10)"
-             id="polygon25" />
-        </g>
-        <g
-           class="am-weather-moon"
-           id="g31">
-          <path
-             d="m 14.5,13.2 c 0,-3.7 2,-6.9 5,-8.7 -1.5,-0.9 -3.2,-1.3 -5,-1.3 -5.5,0 -10,4.5 -10,10 0,5.5 4.5,10 10,10 1.8,0 3.5,-0.5 5,-1.3 -3,-1.7 -5,-5 -5,-8.7 z"
-             fill="#ffa500"
-             stroke="#ffa500"
-             stroke-linejoin="round"
-             stroke-width="2"
-             id="path29" />
-        </g>
-      </g>
-      <g
-         class="am-weather-cloud-2"
-         id="g37">
+         class="am-weather-cloud-1"
+         id="g23">
         <path
            d="m 47.7,35.4 c 0,-4.6 -3.7,-8.2 -8.2,-8.2 -1,0 -1.9,0.2 -2.8,0.5 -0.3,-3.4 -3.1,-6.2 -6.6,-6.2 -3.7,0 -6.7,3 -6.7,6.7 0,0.8 0.2,1.6 0.4,2.3 -0.3,-0.1 -0.7,-0.1 -1,-0.1 -3.7,0 -6.7,3 -6.7,6.7 0,3.6 2.9,6.6 6.5,6.7 h 17.2 c 4.4,-0.5 7.9,-4 7.9,-8.4 z"
            fill="#91c0f8"
            stroke="#ffffff"
            stroke-linejoin="round"
            stroke-width="1.2"
+           transform="matrix(0.6,0,0,0.6,-10,-8)"
+           id="path21" />
+      </g>
+      <g
+         class="am-weather-cloud-2"
+         id="g27">
+        <path
+           d="m 47.7,35.4 c 0,-4.6 -3.7,-8.2 -8.2,-8.2 -1,0 -1.9,0.2 -2.8,0.5 -0.3,-3.4 -3.1,-6.2 -6.6,-6.2 -3.7,0 -6.7,3 -6.7,6.7 0,0.8 0.2,1.6 0.4,2.3 -0.3,-0.1 -0.7,-0.1 -1,-0.1 -3.7,0 -6.7,3 -6.7,6.7 0,3.6 2.9,6.6 6.5,6.7 h 17.2 c 4.4,-0.5 7.9,-4 7.9,-8.4 z"
+           fill="#57a0ee"
+           stroke="#ffffff"
+           stroke-linejoin="round"
+           stroke-width="1.2"
            transform="translate(-20,-11)"
-           id="path35" />
+           id="path25" />
       </g>
     </g>
-    <g
-       transform="matrix(0.7,0,0,0.7,4.3355856,22.270636)"
-       id="g59">
-      <path
-         class="am-weather-cloud-3"
-         d="m 13,26 h 20 a 5,5 0 0 0 0,-10 5,5 0 0 0 -5,5"
-         fill="none"
-         stroke="#ffffff"
-         stroke-width="5.4"
-         stroke-linecap="round"
-         id="path47" />
-      <path
-         class="am-weather-cloud-2"
-         d="m 10,32 h 35 a 5,5 0 0 0 0,-10 5,5 0 0 0 -5,5"
-         fill="none"
-         stroke="#ffffff"
-         stroke-width="5.4"
-         stroke-linecap="round"
-         id="path49" />
-      <path
-         class="am-weather-cloud-1"
-         d="m 16,38 h 22 a 5,5 0 0 1 0,10 5,5 0 0 1 -5,-5"
-         fill="none"
-         stroke="#ffffff"
-         stroke-width="5.4"
-         stroke-linecap="round"
-         id="path51" />
-      <path
-         class="am-weather-cloud-3"
-         d="m 13,26 h 20 a 5,5 0 0 0 0,-10 5,5 0 0 0 -5,5"
-         fill="none"
-         stroke="#57a0ee"
-         stroke-width="3"
-         stroke-linecap="round"
-         id="path53" />
-      <path
-         class="am-weather-cloud-2"
-         d="m 10,32 h 35 a 5,5 0 0 0 0,-10 5,5 0 0 0 -5,5"
-         fill="none"
-         stroke="#57a0ee"
-         stroke-width="3"
-         stroke-linecap="round"
-         id="path55" />
-      <path
-         class="am-weather-cloud-1"
-         d="m 16,38 h 22 a 5,5 0 0 1 0,10 5,5 0 0 1 -5,-5"
-         fill="none"
-         stroke="#57a0ee"
-         stroke-width="3"
-         stroke-linecap="round"
-         id="path57" />
-    </g>
   </g>
+  <line
+     class="cls-3"
+     x1="31.13689"
+     x2="39.897491"
+     y1="46.829575"
+     y2="46.829575"
+     id="line22"
+     style="fill:#90bff7;fill-opacity:1;stroke:#a5a9aa;stroke-width:3.36879px;stroke-linecap:round;stroke-miterlimit:10" />
+  <line
+     class="cls-4"
+     x1="12.364166"
+     x2="26.765158"
+     y1="46.829575"
+     y2="46.829575"
+     id="line24"
+     style="fill:#90bff7;fill-opacity:1;stroke:#b9c1c6;stroke-width:3.36879px;stroke-linecap:round;stroke-miterlimit:10" />
+  <line
+     class="cls-3"
+     x1="27.185186"
+     x2="36.88871"
+     y1="51.115589"
+     y2="51.115589"
+     id="line26"
+     style="fill:#90bff7;fill-opacity:1;stroke:#a5a9aa;stroke-width:3.36879px;stroke-linecap:round;stroke-miterlimit:10" />
+  <line
+     class="cls-3"
+     x1="15.810119"
+     x2="22.402002"
+     y1="51.115589"
+     y2="51.115589"
+     id="line28"
+     style="fill:#90bff7;fill-opacity:1;stroke:#a5a9aa;stroke-width:3.36879px;stroke-linecap:round;stroke-miterlimit:10" />
+  <path
+     style="fill:#90bff7;fill-opacity:1;stroke-width:0.0765867"
+     d="m 11.701977,48.342664 c -0.327486,-0.143381 -0.773471,-0.621186 -0.879395,-0.942139 -0.04858,-0.147201 -0.07362,-0.470949 -0.05565,-0.719438 0.04045,-0.559147 0.332533,-1.014107 0.830412,-1.293464 l 0.34124,-0.191466 h 7.620383 c 7.292617,0 7.631913,0.0062 7.888437,0.142985 1.155191,0.616203 1.280366,2.11065 0.238146,2.843198 l -0.327884,0.230461 -7.709541,0.01673 c -6.339645,0.01376 -7.751584,-0.0017 -7.946149,-0.08686 z"
+     id="path50" />
+  <path
+     style="fill:#569fed;fill-opacity:1;stroke-width:0.0765867"
+     d="m 26.469199,52.578697 c -1.009241,-0.502137 -1.230346,-1.731358 -0.461464,-2.565496 0.533442,-0.578716 0.403506,-0.566478 6.014862,-0.566478 3.521864,0 5.032393,0.02571 5.287612,0.08997 0.481243,0.121177 1.020613,0.655545 1.158393,1.14765 0.185679,0.663181 -0.07945,1.369239 -0.670042,1.784376 l -0.331399,0.232945 -5.335372,0.01992 c -5.306702,0.01982 -5.33713,0.01904 -5.66259,-0.142883 z"
+     id="path52" />
+  <path
+     style="fill:#569fed;fill-opacity:1;stroke-width:0.0765867"
+     d="m 30.472582,48.324049 c -0.340539,-0.179212 -0.645431,-0.485852 -0.819279,-0.823978 -0.119792,-0.232987 -0.147491,-0.406416 -0.123952,-0.776086 0.03798,-0.596387 0.292517,-1.010273 0.80749,-1.312981 l 0.365502,-0.214847 4.556912,-0.02449 c 5.095662,-0.02739 5.183029,-0.02072 5.68718,0.433807 0.915716,0.825585 0.731171,2.193191 -0.364399,2.700424 -0.287965,0.133323 -0.593574,0.141751 -5.093021,0.140449 -4.211109,-0.0012 -4.8143,-0.01592 -5.016433,-0.122298 z"
+     id="path54" />
+  <path
+     style="fill:#569fed;fill-opacity:1;stroke-width:0.0765867"
+     d="m 15.115478,52.591776 c -0.657283,-0.350403 -0.949129,-0.862024 -0.903199,-1.58335 0.03793,-0.59579 0.317435,-1.043521 0.83147,-1.331943 l 0.34124,-0.191467 h 3.714459 c 3.656345,0 3.71925,0.0026 4.020804,0.164867 1.119962,0.60273 1.226134,2.07194 0.203149,2.811174 l -0.332958,0.240604 -3.802727,0.0169 c -3.590473,0.01596 -3.81777,0.0089 -4.072238,-0.126782 z"
+     id="path56" />
+  <path
+     style="fill:#569fed;fill-opacity:1;stroke-width:0.0765867"
+     d="m 30.472582,48.266833 c -0.23248,-0.104658 -0.52275,-0.386669 -0.754122,-0.732674 -0.08595,-0.128526 -0.126221,-0.349969 -0.125366,-0.689281 0.0016,-0.633754 0.204295,-1.017004 0.721517,-1.364208 l 0.374797,-0.251594 4.831433,0.02183 c 5.308671,0.02398 5.033878,-7.06e-4 5.492826,0.493665 0.361068,0.388935 0.468472,0.691518 0.434552,1.224228 -0.03412,0.535821 -0.150745,0.745837 -0.6293,1.133218 l -0.289314,0.234194 -4.913631,0.01702 c -3.989587,0.01383 -4.95684,-0.0025 -5.143392,-0.08641 z"
+     id="path58" />
+  <path
+     style="fill:#90bff7;fill-opacity:1;stroke-width:0.0765867"
+     d="m 26.490071,52.536108 c -0.568775,-0.29985 -0.880749,-0.797602 -0.880749,-1.405228 0,-0.724021 0.522813,-1.398092 1.180793,-1.522415 0.529766,-0.100098 5.210312,-0.154756 8.168639,-0.09539 l 2.418327,0.04853 0.318996,0.211269 c 0.983638,0.651456 1.036532,1.917448 0.109677,2.625152 l -0.34751,0.265344 -5.369207,-0.003 c -4.74387,-0.0027 -5.395968,-0.01717 -5.598967,-0.124193 z"
+     id="path60" />
 </svg>
