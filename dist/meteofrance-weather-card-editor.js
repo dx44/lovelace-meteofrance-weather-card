@@ -109,6 +109,12 @@ export class MeteofranceWeatherCardEditor extends LitElement {
     return this._config.uvEntity || "";
   }
 
+
+  get _detailEntity() {
+    return this._config.detail || "";
+  }
+
+
   firstUpdated() {
     HELPERS.then(help => {
       if (help.importMoreInfoControl) {
@@ -131,6 +137,7 @@ export class MeteofranceWeatherCardEditor extends LitElement {
             .configValue="${"name"}"
             @value-changed="${this._valueChanged}"
           ></paper-input>
+          ${this.renderSensorPicker("Détail", this._detailEntity, "detailEntity")}
           <paper-input
             label="Icons location"
             .value="${this._icons}"
