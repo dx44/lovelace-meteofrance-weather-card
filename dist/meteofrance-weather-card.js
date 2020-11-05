@@ -49,6 +49,25 @@ const windDirections = [
   "N",
 ];
 
+const skycon2cn = {
+  clear: "Jour claire",
+  "clear-night": "Nuit claire",
+  cloudy: "Nuageux",
+  fog: "Brouillard",
+  hail: "Grèle",
+  lightning: "Orage",
+  "lightning-rainy": "Orage pluvieux",
+  partlycloudy: "partiellement nuageux",
+  pouring: "Pluie torrentielle",
+  rainy: "Pluie",
+  snowy: "Neige",
+  "snowy-rainy": "Pluie neige",
+  sunny: "Ensoleillé",
+  windy: "Venteux",
+  "windy-variant": "Venteux variable",
+  exceptional: "Exeptionnel"
+}
+
 window.customCards = window.customCards || [];
 window.customCards.push({
   type: "meteofrance-weather-card",
@@ -170,21 +189,37 @@ class MeteofranceWeatherCard extends LitElement {
     this.numberElements++;
 
     return html`
-      <div class="current ${this.numberElements > 1 ? " spacer" : ""}">
-        <span class="icon bigger"
-        style="background: none, url('${this.getWeatherIcon(
-      stateObj.state.toLowerCase(),
-      this.hass.states["sun.sun"]
-    )}') no-repeat; background-size: contain;">${stateObj.state}
-        </span>
-        ${this._config.name
-        ? html` <span class="title"> ${this._config.name} </span> `
-        : ""}
-        <span class="temp">${this.getUnit("temperature") == "°F"
-        ? Math.round(stateObj.attributes.temperature)
-        : stateObj.attributes.temperature}</span>
-        <span class="tempc"> ${this.getUnit("temperature")}</span>
-      </div>
+        <div class="content">
+          <div class="icon-image">
+            <span
+            style="background: none, url('${this.getWeatherIcon(
+            stateObj.state.toLowerCase(),
+            this.hass.states["sun.sun"]
+            )}') no-repeat; background-size: contain;">
+            </span>
+          </div>
+          <div class="info">
+            <div class="name-state">
+              <div class="state">
+                ${skycon2cn[stateObj.state]}
+              </div>
+              <div class="name">
+                ${this._config.name?this._config.name:attributes.friendly_name}
+              </div>
+            </div>
+            <div class="temp-attribute">
+              <div class="temp">
+                ${this.getUnit("temperature") == "°F"
+                ? Math.round(stateObj.attributes.temperature)
+                : stateObj.attributes.temperature}
+                <span> ${this.getUnit("temperature")}</span>
+              </div>
+              <div class="attribute">
+                ${this.renderMeteoFranceDetail(this.hass.states[this._config.detailEntity])}
+              </div>
+            </div>
+          </div>
+        </div>
     `;
   }
 
@@ -192,7 +227,6 @@ class MeteofranceWeatherCard extends LitElement {
     const sun = this.hass.states["sun.sun"];
     let next_rising;
     let next_setting;
-
     if (sun) {
       next_rising = new Date(sun.attributes.next_rising);
       next_setting = new Date(sun.attributes.next_setting);
@@ -278,14 +312,6 @@ class MeteofranceWeatherCard extends LitElement {
       </li>`
     )}
         `}
-      </ul>
-      <ul class="oneHourLabel">
-      <li></li>
-      <li>10</li>
-      <li>20</li>
-      <li>30</li>
-      <li>40</li>
-      <li>50</li>
       </ul>
      </div>`;
   }
@@ -522,42 +548,75 @@ class MeteofranceWeatherCard extends LitElement {
       .clear {
         clear: both;
       }
-      .title {
-        position: absolute;
-        left: 3.5em;
-        font-weight: 300;
-        font-size: 2.5em;
-        color: var(--primary-text-color);
-      }
-      .temp {
-        font-weight: 300;
-        font-size: 3em;
-        color: var(--primary-text-color);
-        position: absolute;
-        right: 1em;
-      }
-      .tempc {
-        font-weight: 300;
-        font-size: 1em;
-        vertical-align: super;
-        color: var(--primary-text-color);
-        position: absolute;
-        right: 1em;
-        margin-top: -14px;
-        margin-right: 7px;
-      }
-      @media (max-width: 460px) {
-        .title {
-          font-size: 2.2em;
-          left: 4em;
+        /* content */
+        .content {
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          align-items: center;
         }
-        .temp {
-          font-size: 3em;
+        .icon-image {
+          display: flex;
+          align-items: center;
+          min-width: 96px;
         }
-        .tempc {
-          font-size: 1em;
+        .icon-image > * {
+          flex: 0 0 74px;
+          height: 74px;
         }
-      }
+        .weather-icon {
+          --mdc-icon-size: 64px;
+        }
+        .info {
+          display: flex;
+          justify-content: space-between;
+          flex-grow: 1;
+          overflow: hidden;
+        }
+        .temp-attribute {
+          text-align: right;
+          margin-right: 5px;
+        }
+        .temp-attribute .temp {
+          position: relative;
+          margin-right: 24px;
+        }
+        .temp-attribute .temp span {
+          position: absolute;
+          font-size: 24px;
+          top: 1px;
+        }
+        .state,
+        .temp-attribute .temp {
+          font-size: 28px;
+          line-height: 1.2;
+        }
+        .name,
+        .attribute {
+          font-size: 14px;
+          line-height: 1;
+          color: var(--secondary-text-color);
+        }
+        .name-state {
+          overflow: hidden;
+          padding-right: 12px;
+          width: 100%;
+        }
+        .name,
+        .state {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .attribute {
+          white-space: nowrap;
+        }
+        .ha-icon {
+          height: 18px;
+          margin-right: 5px;
+          color: var(--paper-item-icon-color);
+        }
+
       .current {
         padding: 1.2em 0;
         margin-bottom: 3.5em;
@@ -622,13 +681,6 @@ class MeteofranceWeatherCard extends LitElement {
         color: var(--primary-text-color);
         font-weight: 300;
       }
-      .icon.bigger {
-        width: 10em;
-        height: 10em;
-        margin-top: -4em;
-        position: absolute;
-        left: 0em;
-      }
       .icon {
         width: 50px;
         height: 50px;
@@ -682,19 +734,7 @@ class MeteofranceWeatherCard extends LitElement {
       .rain-30min, .rain-40min, .rain-50min {
         flex: 2 1 0;
       }
-      .oneHourLabel {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        padding: 0px;
-        margin-top: 0px;
-        color: var(--primary-text-color);
-        overflow: hidden;
-        list-style: none;
-      }
-      .oneHourLabel li {
-        flex: 1 1 0;
-      }
+
       .oneHourHeader {
         display: flex;
         flex-direction: row;
@@ -741,3 +781,4 @@ class MeteofranceWeatherCard extends LitElement {
   }
 }
 customElements.define("meteofrance-weather-card", MeteofranceWeatherCard);
+
