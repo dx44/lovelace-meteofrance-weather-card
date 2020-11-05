@@ -204,7 +204,9 @@ class MeteofranceWeatherCard extends LitElement {
                 ${skycon2cn[stateObj.state]}
               </div>
               <div class="name">
-                ${this._config.name?this._config.name:attributes.friendly_name}
+                    ${this._config.name
+                    ? html` <span class="name"> ${this._config.name} </span>` 
+                    : ""}
               </div>
             </div>
             <div class="temp-attribute">
@@ -219,7 +221,7 @@ class MeteofranceWeatherCard extends LitElement {
               </div>
             </div>
           </div>
-        </div>
+        </div><br>
     `;
   }
 
