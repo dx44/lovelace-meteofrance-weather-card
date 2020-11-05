@@ -111,7 +111,7 @@ export class MeteofranceWeatherCardEditor extends LitElement {
 
 
   get _detailEntity() {
-    return this._config.detail || "";
+    return this._config.detailEntity || "";
   }
 
 
