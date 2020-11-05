@@ -563,8 +563,8 @@ class MeteofranceWeatherCard extends LitElement {
           min-width: 96px;
         }
         .icon-image > * {
-          flex: 0 0 74px;
-          height: 74px;
+          flex: 0 0 100px;
+          height: 100px;
         }
         .weather-icon {
           --mdc-icon-size: 64px;
