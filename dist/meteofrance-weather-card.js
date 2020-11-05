@@ -610,6 +610,7 @@ class MeteofranceWeatherCard extends LitElement {
         }
         .attribute {
           white-space: nowrap;
+          list-style: none;
         }
         .ha-icon {
           height: 18px;
