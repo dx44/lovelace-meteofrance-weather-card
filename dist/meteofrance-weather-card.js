@@ -21,6 +21,7 @@ const weatherIconsDay = {
   exceptional: "!!",
 };
 
+
 const weatherIconsNight = {
   ...weatherIconsDay,
   clear: "night",
