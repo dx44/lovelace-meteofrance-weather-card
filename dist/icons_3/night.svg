@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="63.299999"
+   height="63.299999"
+   viewbox="0 0 17 17"
+   id="svg32"
+   sodipodi:docname="night.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata36">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1770"
+     inkscape:window-height="1026"
+     id="namedview34"
+     showgrid="false"
+     inkscape:zoom="6.439447"
+     inkscape:cx="16.5"
+     inkscape:cy="34.220522"
+     inkscape:window-x="1927"
+     inkscape:window-y="614"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="night"
+     inkscape:document-rotation="0" />
+  <defs
+     id="defs15">
+    <filter
+       id="blur"
+       width="2"
+       height="2">
+      <feComponentTransfer
+         id="feComponentTransfer4">
+        <feFuncA
+           type="linear"
+           slope="0.05"
+           id="feFuncA2" />
+      </feComponentTransfer>
+      <feMerge
+         id="feMerge10">
+        <feMergeNode
+           id="feMergeNode6" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode8" />
+      </feMerge>
+    </filter>
+    <style
+       type="text/css"
+       id="style13"><![CDATA[
+
+
+
+
+/* MOON */
+@keyframes am-weather-star-1 {
+	0% {
+		opacity: 1;
+	}
+	2% {
+		opacity: 0.5;
+	}
+	5% {
+		opacity: 1;
+	}
+	35% {
+		opacity: 1;
+	}
+	37% {
+		opacity: 0.2;
+	}
+	40% {
+		opacity: 1;
+	}
+}
+.am-weather-star-1 {
+	-webkit-animation-name: am-weather-star-1;
+	-moz-animation-name: am-weather-star-1;
+	-ms-animation-name: am-weather-star-1;
+	animation-name: am-weather-star-1;
+	-webkit-animation-duration: 18s;
+	-moz-animation-duration: 18s;
+	-ms-animation-duration: 18s;
+	animation-duration: 18s;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+	-ms-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-ms-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-transform-origin: 12.5px 15.15px 0; /* TODO FF CENTER ISSUE */
+	-moz-transform-origin: 12.5px 15.15px 0; /* TODO FF CENTER ISSUE */
+	-ms-transform-origin: 12.5px 15.15px 0; /* TODO FF CENTER ISSUE */
+	transform-origin: 12.5px 15.15px 0; /* TODO FF CENTER ISSUE */
+}
+@keyframes am-weather-star-2 {
+	5% {
+		opacity: 1;
+	}
+	7% {
+		opacity: 0.5;
+	}
+	10% {
+		opacity: 1;
+	}
+	45% {
+		opacity: 1;
+	}
+	47% {
+		opacity: 0.2;
+	}
+	50% {
+		opacity: 1;
+	}
+}
+.am-weather-star-2 {
+	-webkit-animation-name: am-weather-star-2;
+	-moz-animation-name: am-weather-star-2;
+	-ms-animation-name: am-weather-star-2;
+	animation-name: am-weather-star-2;
+	-webkit-animation-duration: 18s;
+	-moz-animation-duration: 18s;
+	-ms-animation-duration: 18s;
+	animation-duration: 18s;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+	-ms-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-ms-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-transform-origin: 12.5px 15.15px 0; /* TODO FF CENTER ISSUE */
+	-moz-transform-origin: 12.5px 15.15px 0; /* TODO FF CENTER ISSUE */
+	-ms-transform-origin: 12.5px 15.15px 0; /* TODO FF CENTER ISSUE */
+	transform-origin: 12.5px 15.15px 0; /* TODO FF CENTER ISSUE */
+}
+
+/* MOON */
+@keyframes am-weather-moon {
+	0% {
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	25% {
+		-webkit-transform: rotate(25deg);
+		-moz-transform: rotate(25deg);
+		-ms-transform: rotate(25deg);
+		transform: rotate(25deg);
+	}
+	50% {
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+}
+.am-weather-moon {
+	-webkit-animation-name: am-weather-moon;
+	-moz-animation-name: am-weather-moon;
+	-ms-animation-name: am-weather-moon;
+	animation-name: am-weather-moon;
+	-webkit-animation-duration: 18s;
+	-moz-animation-duration: 18s;
+	-ms-animation-duration: 18s;
+	animation-duration: 18s;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+	-ms-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-ms-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-transform-origin: 12.5px 15.15px 0; /* TODO FF CENTER ISSUE */
+	-moz-transform-origin: 12.5px 15.15px 0; /* TODO FF CENTER ISSUE */
+	-ms-transform-origin: 12.5px 15.15px 0; /* TODO FF CENTER ISSUE */
+	transform-origin: 12.5px 15.15px 0; /* TODO FF CENTER ISSUE */
+}
+
+/* EASING */
+.am-weather-easing-ease-in-out {
+	-webkit-animation-timing-function: ease-in-out;
+	-moz-animation-timing-function: ease-in-out;
+	-ms-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+}]]></style>
+  </defs>
+  <g
+     filter="url(#blur)"
+     id="night">
+    <g
+       id="g29"
+       transform="matrix(1.7637131,0,0,1.7637131,7.733259,8.3544304)">
+      <g
+         class="am-weather-star-2"
+         id="g19">
+        <polygon
+           fill="#f9e491"
+           points="3.3,5.2 2.7,4 1.5,3.3 2.7,2.7 3.3,1.5 4,2.7 5.2,3.3 4,4 "
+           stroke="none"
+           stroke-miterlimit="10"
+           id="polygon17" />
+      </g>
+      <g
+         class="am-weather-star-1"
+         id="g23">
+        <polygon
+           fill="#f9e491"
+           points="3.3,5.2 2.7,4 1.5,3.3 2.7,2.7 3.3,1.5 4,2.7 5.2,3.3 4,4 "
+           stroke="none"
+           stroke-miterlimit="10"
+           transform="translate(20,10)"
+           id="polygon21" />
+      </g>
+      <g
+         class="am-weather-moon"
+         id="g27">
+        <path
+           d="m 14.5,13.2 c 0,-3.7 2,-6.9 5,-8.7 -1.5,-0.9 -3.2,-1.3 -5,-1.3 -5.5,0 -10,4.5 -10,10 0,5.5 4.5,10 10,10 1.8,0 3.5,-0.5 5,-1.3 -3,-1.7 -5,-5 -5,-8.7 z"
+           fill="#f9e491"
+           stroke="#f9e491"
+           stroke-linejoin="round"
+           stroke-width="2"
+           id="path25" />
+      </g>
+    </g>
+  </g>
+</svg>
