@@ -284,14 +284,6 @@ class MeteofranceWeatherCard extends LitElement {
     )}
         `}
       </ul>
-      <ul class="oneHourLabel">
-      <li></li>
-      <li>10</li>
-      <li>20</li>
-      <li>30</li>
-      <li>40</li>
-      <li>50</li>
-      </ul>
      </div>`;
   }
 
@@ -714,21 +706,6 @@ class MeteofranceWeatherCard extends LitElement {
 
       .rain-35min, .rain-45min, .rain-55min {
         flex: 2 1 0;
-      }
-
-      .oneHourLabel {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        padding: 0px;
-        margin-top: 0px;
-        color: var(--primary-text-color);
-        overflow: hidden;
-        list-style: none;
-      }
-
-      .oneHourLabel li {
-        flex: 1 1 0;
       }
 
       .oneHourHeader {
