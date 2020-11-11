@@ -746,11 +746,15 @@ class MeteofranceWeatherCard extends LitElement {
 
       .forecast > li {
         flex: 1;
+        border-right: 0.1em solid #d9d9d9;
+      }
+
+      .forecast > *:last-child {
+        border-right: 0;
       }
 
       .forecast ul.day {
         align-items: center;
-        border-right: 0.1em solid #d9d9d9;
       }
 
       .forecast ul.day > *:first-child {
