@@ -57,7 +57,7 @@ const skycon2cn = {
   hail: "Grèle",
   lightning: "Orage",
   "lightning-rainy": "Orage pluvieux",
-  partlycloudy: "Partiellement nuageux",
+  partlycloudy: "Éclaircies",
   pouring: "Pluie torrentielle",
   rainy: "Pluie",
   snowy: "Neige",
