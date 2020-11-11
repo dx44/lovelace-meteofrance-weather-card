@@ -60,21 +60,21 @@ const windDirections = [
 
 const forecastText = {
   clear: "Ciel dégagé",
-  "clear-night": "Nuit dégagé",
+  "clear-night": "Nuit claire",
   cloudy: "Nuageux",
   fog: "Brouillard",
-  hail: "Grèle",
-  lightning: "Orage",
-  "lightning-rainy": "Orage pluvieux",
-  partlycloudy: "Partiellement nuageux",
-  pouring: "Pluie torrentielle",
+  hail: "Risque de grèle",
+  lightning: "Orages",
+  "lightning-rainy": "Pluies orageuses",
+  partlycloudy: "Eclaircies",
+  pouring: "Pluie forte",
   rainy: "Pluie",
   snowy: "Neige",
-  "snowy-rainy": "Pluie neige",
+  "snowy-rainy": "Pluie verglaçante",
   sunny: "Ensoleillé",
   windy: "Venteux",
   "windy-variant": "Venteux variable",
-  exceptional: "Exeptionnel"
+  exceptional: "Exceptionnel"
 }
 
 window.customCards = window.customCards || [];
