@@ -51,14 +51,14 @@ const windDirections = [
 
 const skycon2cn = {
   clear: "Ciel dégagé",
-  "clear-night": "Nuit dégagé",
+  "clear-night": "Nuit dégagée",
   cloudy: "Nuageux",
   fog: "Brouillard",
   hail: "Grèle",
   lightning: "Orage",
   "lightning-rainy": "Orage pluvieux",
   partlycloudy: "Éclaircies",
-  pouring: "Pluie torrentielle",
+  pouring: "Averses",
   rainy: "Pluie",
   snowy: "Neige",
   "snowy-rainy": "Pluie neige",
