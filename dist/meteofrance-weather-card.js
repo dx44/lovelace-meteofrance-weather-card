@@ -720,7 +720,6 @@ class MeteofranceWeatherCard extends LitElement {
         font-weight: 600;
         color: var(--primary -text -color);
         margin: 2px;
-        flex-direction: row-reverse;
       }
 
       .alert > *:first-child {
