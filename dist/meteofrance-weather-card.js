@@ -237,11 +237,11 @@ class MeteofranceWeatherCard extends LitElement {
         ${this.isSelected(this._config.details)
         ? this.renderDetails(stateObj) : ""}
 
-        ${this.isSelected(this._config.one_hour_forecast)
-        ? this.renderOneHourForecast() : ""}
-
         ${this.isSelected(this._config.alert_forecast)
         ? this.renderAlertForecast() : ""}
+
+        ${this.isSelected(this._config.one_hour_forecast)
+        ? this.renderOneHourForecast() : ""}
 
         ${this.isSelected(this._config.forecast)
         ? this.renderForecast(stateObj.attributes.forecast) : ""}
@@ -388,7 +388,7 @@ class MeteofranceWeatherCard extends LitElement {
     this.numberElements++;
 
     return html`
-    <ul class="flow-row alertForecast">
+      <ul class="flow-row alertForecast ${this.numberElements > 1 ? " spacer" : ""}">
         ${alerts.map(
       (phenomenon) => html`
       <li>
