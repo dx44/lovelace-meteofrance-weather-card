@@ -380,34 +380,21 @@ class MeteofranceWeatherCard extends LitElement {
       return html``;
     }
 
-    this.numberElements++;
-
-    return html`
-      ${this.renderAlertType("Rouge", alertForecast)}
-      ${this.renderAlertType("Orange", alertForecast)}
-      ${this.renderAlertType("Jaune", alertForecast)}`;
-  }
-
-  renderAlertType(level, alertForecast) {
-    const alerts = this.getAlertForecast(level, alertForecast);
+    const alerts = this.getAlertForecast(alertForecast);
 
     if (alerts.length == 0)
       return html``
 
-    let lclevel = level.toLowerCase();
+    this.numberElements++;
 
     return html`
-    <ul class="flow-row alert ${lclevel}">
-      <li>
-        <ha-icon icon="mdi:alert"></ha-icon>Vigilance ${lclevel} en cours
-      </li>
-        ${this.getAlertForecast(level, alertForecast).map(
+    <ul class="flow-row alertForecast">
+        ${alerts.map(
       (phenomenon) => html`
       <li>
-        <ha-icon icon="${phenomenon[1]}" title="${phenomenon[0]}"></ha-icon>
+        <ha-icon icon="${phenomenon.icon}" title="${phenomenon.name}" class="alertForecast${phenomenon.color}"></ha-icon>
       </li>`
     )}
-      </div>
     </ul>`
   }
 
@@ -526,35 +513,32 @@ class MeteofranceWeatherCard extends LitElement {
     return "Pas de pluie dans l'heure."
   }
 
-  getAlertForecast(color, alertEntity) {
-    let phenomenaIcons = {
-      "Vent violent": "mdi:weather-windy",
-      "Pluie-inondation": "mdi:weather-pouring",
-      Orages: "mdi:weather-lightning",
-      Inondation: "mdi:home-flood",
-      "Neige-verglas": "mdi:weather-snowy-heavy",
-      Canicule: "mdi:weather-sunny-alert",
-      "Grand-froid": "mdi:snowflake",
-      Avalanches: "mdi:image-filter-hdr",
-      "Vagues-submersion": "mdi:waves",
-    };
+  getAlertForecast(alertEntity) {
+    let phenomenaList = [
+       { name: 'Vent violent', icon: 'mdi:weather-windy', color: 'None' },
+       { name: 'Pluie-inondation', icon: 'mdi:weather-pouring', color: 'None' },
+       { name: 'Orages', icon: 'mdi:weather-lightning', color: 'None' },
+       { name: 'Inondation', icon: 'mdi:home-flood', color: 'None' },
+       { name: 'Neige-verglas', icon: 'mdi:weather-snowy-heavy', color: 'None' },
+       { name: 'Canicule', icon: 'mdi:weather-sunny-alert', color: 'None' },
+       { name: 'Grand-froid', icon: 'mdi:snowflake', color: 'None' },
+       { name: 'Avalanches', icon: 'mdi:image-filter-hdr', color: 'None' },
+       { name: 'Vagues-submersion', icon: 'mdi:waves', color: 'None' }
+    ]
 
     if (alertEntity == undefined) {
       return [];
     }
 
-    let phenomenaList = [];
     for (const [currentPhenomenon, currentPhenomenonColor] of Object.entries(
       alertEntity.attributes
     )) {
-      if (currentPhenomenonColor == color) {
-        phenomenaList.push([
-          currentPhenomenon,
-          phenomenaIcons[currentPhenomenon],
-        ]);
-      }
-    }
+          let phenoma = phenomenaList.find(phenomena => phenomena.name === currentPhenomenon);
+	  if(phenoma) {
+             phenoma.color=currentPhenomenonColor;
+	  }
 
+    }
     return phenomenaList;
   }
 
@@ -745,28 +729,39 @@ class MeteofranceWeatherCard extends LitElement {
       }
 
       /* Alert */
-      .alert {
-        border-radius: 5px;
-        padding: 5px 10px;
-        font-weight: 600;
-        color: var(--primary -text -color);
-        margin: 2px;
+      .alertForecast {
+        text-align: center;
+        flex-wrap: nowrap;
       }
 
-      .alert > *:first-child {
-        margin-right: auto;
+      .alertForecast > li {
+        flex: 1;
       }
 
-      .alert.jaune {
-        background-color: rgba(255,235,0,0.5);
+      .alertForecastNone {
+        color: grey;
       }
 
-      .alert.orange {
-        background-color: rgba(255,152,0,0.5);
+      .alertForecastVert {
+        color: green;
       }
 
-      .alert.rouge {
-        background-color: rgba(244,67,54,0.5);
+      .alertForecastJaune {
+        color: yellow;
+      }
+
+      .alertForecastOrange {
+        color: orange;
+      }
+
+      .alertForecastRouge {
+        color: red;
+      }
+
+      .alertForecast .ha-icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 5px;
       }
 
       /* Forecast */
