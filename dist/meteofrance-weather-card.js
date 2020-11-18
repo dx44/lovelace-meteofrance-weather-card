@@ -392,7 +392,7 @@ class MeteofranceWeatherCard extends LitElement {
         ${alerts.map(
       (phenomenon) => html`
       <div class="alertForecast${phenomenon.color}">
-        <ha-icon icon="${phenomenon.icon}" title="${phenomenon.name}"}"></ha-icon>
+        <ha-icon icon="${phenomenon.icon}" title="${phenomenon.name}"></ha-icon>
       </div>`
     )}
     </div>`
