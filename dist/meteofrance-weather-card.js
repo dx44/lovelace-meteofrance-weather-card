@@ -762,12 +762,6 @@ class MeteofranceWeatherCard extends LitElement {
         background-color: red;
       }
 
-      .alertForecast .ha-icon {
-        width: 50px;
-        height: 50px;
-        margin-right: 5px;
-      }
-
       /* Forecast */
       .forecast {
         justify-content: space-between;
