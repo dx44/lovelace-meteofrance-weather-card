@@ -392,7 +392,7 @@ class MeteofranceWeatherCard extends LitElement {
         ${alerts.map(
       (phenomenon) => html`
       <div class="alertForecast${phenomenon.color}">
-        <ha-icon icon="${phenomenon.icon}" title="${phenomenon.name}"}"></ha-icon>
+        <ha-icon icon="${phenomenon.icon}" title="${phenomenon.name}"></ha-icon>
       </div>`
     )}
     </div>`
@@ -514,17 +514,43 @@ class MeteofranceWeatherCard extends LitElement {
   }
 
   getAlertForecast(alertEntity) {
-    let phenomenaList = [
-       { name: 'Vent violent', icon: 'mdi:weather-windy', color: 'None' },
-       { name: 'Pluie-inondation', icon: 'mdi:weather-pouring', color: 'None' },
-       { name: 'Orages', icon: 'mdi:weather-lightning', color: 'None' },
-       { name: 'Inondation', icon: 'mdi:home-flood', color: 'None' },
-       { name: 'Neige-verglas', icon: 'mdi:weather-snowy-heavy', color: 'None' },
-       { name: 'Canicule', icon: 'mdi:weather-sunny-alert', color: 'None' },
-       { name: 'Grand-froid', icon: 'mdi:snowflake', color: 'None' },
-       { name: 'Avalanches', icon: 'mdi:image-filter-hdr', color: 'None' },
-       { name: 'Vagues-submersion', icon: 'mdi:waves', color: 'None' }
-    ]
+    let phenomenaList = [ ]
+
+    if(!this._config.hide_alertVentViolent) {
+       phenomenaList.push({ name: 'Vent violent', icon: 'mdi:weather-windy', color: 'None' });
+    }
+
+    if(!this._config.hide_alertPluieInondation) {
+       phenomenaList.push({ name: 'Pluie-inondation', icon: 'mdi:weather-pouring', color: 'None' });
+    }
+
+    if(!this._config.hide_alertOrages) {
+       phenomenaList.push({ name: 'Orages', icon: 'mdi:weather-lightning', color: 'None' });
+    }
+
+    if(!this._config.hide_alertInondation) {
+       phenomenaList.push({ name: 'Inondation', icon: 'mdi:home-flood', color: 'None' });
+    }
+
+    if(!this._config.hide_alertNeigeVerglas) {
+       phenomenaList.push({ name: 'Neige-verglas', icon: 'mdi:weather-snowy-heavy', color: 'None' });
+    }
+
+    if(!this._config.hide_alertCanicule) {
+       phenomenaList.push({ name: 'Canicule', icon: 'mdi:weather-sunny-alert', color: 'None' });
+    }
+
+    if(!this._config.hide_alertGrandFroid) {
+       phenomenaList.push({ name: 'Grand-froid', icon: 'mdi:snowflake', color: 'None' });
+    }
+
+    if(!this._config.hide_alertAvalanches) {
+       phenomenaList.push({ name: 'Avalanches', icon: 'mdi:image-filter-hdr', color: 'None' });
+    }
+
+    if(!this._config.hide_alertVaguesSubmersion) {
+       phenomenaList.push({ name: 'Vagues-submersion', icon: 'mdi:waves', color: 'None' });
+    }
 
     if (alertEntity == undefined) {
       return [];
@@ -760,12 +786,6 @@ class MeteofranceWeatherCard extends LitElement {
 
       .alertForecastRouge {
         background-color: red;
-      }
-
-      .alertForecast .ha-icon {
-        width: 50px;
-        height: 50px;
-        margin-right: 5px;
       }
 
       /* Forecast */
