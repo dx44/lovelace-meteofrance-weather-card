@@ -388,14 +388,14 @@ class MeteofranceWeatherCard extends LitElement {
     this.numberElements++;
 
     return html`
-      <ul class="flow-row alertForecast ${this.numberElements > 1 ? " spacer" : ""}">
+      <div class="flow-row alertForecast ${this.numberElements > 1 ? " spacer" : ""}">
         ${alerts.map(
       (phenomenon) => html`
-      <li>
-        <ha-icon icon="${phenomenon.icon}" title="${phenomenon.name}" class="alertForecast${phenomenon.color}"></ha-icon>
-      </li>`
+      <div class="alertForecast${phenomenon.color}">
+        <ha-icon icon="${phenomenon.icon}" title="${phenomenon.name}"}"></ha-icon>
+      </div>`
     )}
-    </ul>`
+    </div>`
   }
 
   renderForecast(forecast) {
@@ -734,28 +734,32 @@ class MeteofranceWeatherCard extends LitElement {
         flex-wrap: nowrap;
       }
 
-      .alertForecast > li {
+      .alertForecast > div {
         flex: 1;
+        color: var(--paper-item-icon-color);
+        color: grey;
+        border: 0;
+        border-radius: 5px;
+        margin-left: 1px;
+        margin-right: 1px;
       }
 
       .alertForecastNone {
-        color: grey;
       }
 
       .alertForecastVert {
-        color: green;
       }
 
       .alertForecastJaune {
-        color: yellow;
+        background-color: yellow;
       }
 
       .alertForecastOrange {
-        color: orange;
+        background-color: orange;
       }
 
       .alertForecastRouge {
-        color: red;
+        background-color: red;
       }
 
       .alertForecast .ha-icon {
