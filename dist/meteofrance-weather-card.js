@@ -762,6 +762,7 @@ class MeteofranceWeatherCard extends LitElement {
       }
 
       .alertForecastNone {
+        display:none;
       }
 
       .alertForecastVert {
