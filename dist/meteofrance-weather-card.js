@@ -520,40 +520,40 @@ class MeteofranceWeatherCard extends LitElement {
       return [];
     }
 
-    if(!this._config.hide_alertVentViolent) {
-       phenomenaList.push({ name: 'Vent violent', icon: 'mdi:weather-windy', color: alertEntity.attributes['Vent violent']||'None' });
+    if(!this._config.hide_alertVentViolent && alertEntity.attributes['Vent violent']) {
+       phenomenaList.push({ name: 'Vent violent', icon: 'mdi:weather-windy', color: alertEntity.attributes['Vent violent'] });
     }
 
-    if(!this._config.hide_alertPluieInondation) {
-       phenomenaList.push({ name: 'Pluie-inondation', icon: 'mdi:weather-pouring', color: alertEntity.attributes['Pluie-inondation']||'None' });
+    if(!this._config.hide_alertPluieInondation && alertEntity.attributes['Pluie-inondation']) {
+       phenomenaList.push({ name: 'Pluie-inondation', icon: 'mdi:weather-pouring', color: alertEntity.attributes['Pluie-inondation'] });
     }
 
-    if(!this._config.hide_alertOrages) {
-       phenomenaList.push({ name: 'Orages', icon: 'mdi:weather-lightning', color: alertEntity.attributes['Orages']||'None' });
+    if(!this._config.hide_alertOrages && alertEntity.attributes['Orages']) {
+       phenomenaList.push({ name: 'Orages', icon: 'mdi:weather-lightning', color: alertEntity.attributes['Orages'] });
     }
 
-    if(!this._config.hide_alertInondation) {
-       phenomenaList.push({ name: 'Inondation', icon: 'mdi:home-flood', color: alertEntity.attributes['Inondation']||'None' });
+    if(!this._config.hide_alertInondation && alertEntity.attributes['Inondation']) {
+       phenomenaList.push({ name: 'Inondation', icon: 'mdi:home-flood', color: alertEntity.attributes['Inondation'] });
     }
 
-    if(!this._config.hide_alertNeigeVerglas) {
-       phenomenaList.push({ name: 'Neige-verglas', icon: 'mdi:weather-snowy-heavy', color: alertEntity.attributes['Neige-verglas']||'None' });
+    if(!this._config.hide_alertNeigeVerglas && alertEntity.attributes['Neige-verglas']) {
+       phenomenaList.push({ name: 'Neige-verglas', icon: 'mdi:weather-snowy-heavy', color: alertEntity.attributes['Neige-verglas'] });
     }
 
-    if(!this._config.hide_alertCanicule) {
-       phenomenaList.push({ name: 'Canicule', icon: 'mdi:weather-sunny-alert', color: alertEntity.attributes['Canicule']||'None' });
+    if(!this._config.hide_alertCanicule && alertEntity.attributes['Canicule']) {
+       phenomenaList.push({ name: 'Canicule', icon: 'mdi:weather-sunny-alert', color: alertEntity.attributes['Canicule'] });
     }
 
-    if(!this._config.hide_alertGrandFroid) {
-       phenomenaList.push({ name: 'Grand-froid', icon: 'mdi:snowflake', color: alertEntity.attributes['Grand-froid']||'None' });
+    if(!this._config.hide_alertGrandFroid && alertEntity.attributes['Grand-froid']) {
+       phenomenaList.push({ name: 'Grand-froid', icon: 'mdi:snowflake', color: alertEntity.attributes['Grand-froid'] });
     }
 
-    if(!this._config.hide_alertAvalanches) {
-       phenomenaList.push({ name: 'Avalanches', icon: 'mdi:image-filter-hdr', color: alertEntity.attributes['Avalanches']||'None' });
+    if(!this._config.hide_alertAvalanches && alertEntity.attributes['Avalanches']) {
+       phenomenaList.push({ name: 'Avalanches', icon: 'mdi:image-filter-hdr', color: alertEntity.attributes['Avalanches'] });
     }
 
-    if(!this._config.hide_alertVaguesSubmersion) {
-       phenomenaList.push({ name: 'Vagues-submersion', icon: 'mdi:waves', color: alertEntity.attributes['Vagues-submersion']||'None' });
+    if(!this._config.hide_alertVaguesSubmersion && alertEntity.attributes['Vagues-submersion']) {
+       phenomenaList.push({ name: 'Vagues-submersion', icon: 'mdi:waves', color: alertEntity.attributes['Vagues-submersion'] });
     }
 
     return phenomenaList;
@@ -759,10 +759,6 @@ class MeteofranceWeatherCard extends LitElement {
         border-radius: 5px;
         margin-left: 1px;
         margin-right: 1px;
-      }
-
-      .alertForecastNone {
-        display:none;
       }
 
       .alertForecastVert {
