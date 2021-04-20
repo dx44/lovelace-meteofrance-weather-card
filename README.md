@@ -155,6 +155,11 @@ hide_alertAvalanches: true
 hide_alertVaguesSubmersion: true
 ```
 
+Il est aussi possible d'utiliser un autre capteur pour l'affichage de la température en ajoutant l'élément suivant :
+```yaml
+temperatureEntity: sensor.outdie_temperature
+```
+
 ## Crédits
 
 Projet réalisé par la communauté de HACF et depuis les projets suivants :

@@ -27,7 +27,8 @@ const DefaultSensors = [
   ["freezeChanceEntity", "_freeze_chance"],
   ["snowChanceEntity", "_snow_chance"],
   ["uvEntity", "_uv"],
-  ["rainForecastEntity", "_next_rain"]
+  ["rainForecastEntity", "_next_rain"],
+  ["temperatureEntity", ""]
 ];
 
 const weatherIconsNight = {
@@ -212,6 +213,8 @@ class MeteofranceWeatherCard extends LitElement {
 
     const stateObj = this.hass.states[this._config.entity];
 
+    stateObj.attributes.temperature = this.getTemperature();
+
     if (!stateObj) {
       return html`
         <style>
@@ -264,7 +267,7 @@ class MeteofranceWeatherCard extends LitElement {
         ? html` <div> ${this._config.name} </div>`
         : ""}
           </li>
-          <li>
+          <li @click="${this._handleTemperatureClick}">
               ${this.getUnit("temperature") == "°F"
         ? Math.round(stateObj.attributes.temperature)
         : stateObj.attributes.temperature}
@@ -594,8 +597,22 @@ class MeteofranceWeatherCard extends LitElement {
     }
   }
 
+  getTemperature() {
+    if (this._config.temperatureEntity != null) {
+      return this.hass.states[this._config.temperatureEntity].state;
+    }
+    return this.hass.states[this._config.entity].attributes.temperature;
+  }
+
   _handleClick() {
     fireEvent(this, "hass-more-info", { entityId: this._config.entity });
+  }
+
+  _handleTemperatureClick(e) {
+    if (this._config.temperatureEntity != null) {
+      e.stopPropagation();
+      fireEvent(this, "hass-more-info", { entityId: this._config.temperatureEntity });
+    }
   }
 
   getCardSize() {
