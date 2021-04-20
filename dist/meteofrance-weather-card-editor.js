@@ -30,7 +30,8 @@ const DefaultSensors = new Map([
   ["freezeChanceEntity", "_freeze_chance"],
   ["snowChanceEntity", "_snow_chance"],
   ["uvEntity", "_uv"],
-  ["rainForecastEntity", "_next_rain"]
+  ["rainForecastEntity", "_next_rain"],
+  ["temperatureEntity", ""]
 ])
 
 export class MeteofranceWeatherCardEditor extends LitElement {
@@ -83,6 +84,10 @@ export class MeteofranceWeatherCardEditor extends LitElement {
   // Config value
   get _alertEntity() {
     return this._config.alertEntity || "";
+  }
+
+  get _temperatureEntity() {
+    return this._config.temperatureEntity || "";
   }
 
   get _cloudCoverEntity() {
@@ -163,6 +168,7 @@ export class MeteofranceWeatherCardEditor extends LitElement {
             @value-changed="${this._valueChanged}"
           ></paper-input>
           <!-- Meteo France weather entities -->
+          ${this.renderSensorPicker("Température", this._temperatureEntity, "temperatureEntity")}
           ${this.renderSensorPicker("Risque de pluie", this._rainChanceEntity, "rainChanceEntity")}
           ${this.renderSensorPicker("UV", this._uvEntity, "uvEntity")}
           ${this.renderSensorPicker("Couverture nuageuse", this._cloudCoverEntity, "cloudCoverEntity")}
